@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Города России</title>
+    <style>
+        input
+        {
+            font-size: 20px;
+
+            width: 240px;
+            padding: 10px;
+
+            color: grey;
+            border: 2px solid #0f0;
+            border-radius: 5px;
+        }
+
+        input::-webkit-input-placeholder
+        {
+            font-size: 20px;
+
+            color: lightgrey;
+        }
+
+        ul
+        {
+            position: absolute;
+            top: 40px;
+        }
+        
+        .city
+        {
+            font-size: 40px;
+            line-height: 80px;
+
+            position: fixed;
+            top: -30px;
+            left: 40vw;
+
+            width: 500px;
+            height: 80px;
+
+            text-align: center;
+
+            color: #f00;
+            border: 4px solid;
+            border-radius: 10px;
+        }
+
+        li
+        {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+        <input type="text" id="input" placeholder="Введите название города">
+        <p id="city" class="city"></p>
+        <ul id="ul"></ul>
+    
+<script>
+	const input = document.getElementById('input');
+const ul = document.getElementById('ul');
+const city = document.getElementById('city');
+    
+fetch('https://v-glebik.site/json/cities.json')
+	
+	.then((response) => response.json())
+	.then((data) => {
+		input.addEventListener('input', searchCity);
+
+	        function searchCity (e) {   
+		    ul.innerHTML = '';
+    
+		    for(let i=0; i<data.cities.length; i++) {
+			    if(data.cities[i].slice(0, e.target.value.length).toLowerCase() === e.target.value.toLowerCase()) {
+				    const li = document.createElement('li');
+				    li.textContent = data.cities[i];
+				    ul.appendChild(li);
+			    } 
+        
+			    if(e.target.value == '') {
+				    ul.innerHTML = '';
+				    city.innerText = '';
+			    }
+		    }   
+
+		    let items = ul.children;
+		    for(let x = 0; x < items.length; x++) {
+			    let item = items[x];
+			    item.onclick = function(e) {
+				    city.innerText = e.target.innerText;
+			    };  
+		    }
+	    }    
+	})
+	.catch(alert);
+</script>
+
+</body>
+
+</html>

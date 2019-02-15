@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+	@font-face {
+		font-family: a_LCDNovaObl;
+		src: url(fonts/a_lcdnovaobl_[allfont.ru].ttf);
+	}
+    body
+    {
+        display: flex;
+
+        justify-content: center;
+    }
+    .wrapper
+    {
+        position: absolute;
+        top: 0;
+        left: 50vw;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    img
+    {
+        max-width: 100%;
+    }
+
+    .certificate-container
+    {
+        position: absolute;
+        top: 0;
+
+        width: 60vw;
+
+        transition-timing-function: linear;
+        transition-duration: 1.0s;
+
+        opacity: 0;
+    }
+    .visible
+    {
+        opacity: 1.0;
+    }
+
+    .button-container
+    {
+        display: flex;
+
+        width: 70vw;
+        height: 43vw;
+        margin: 0 auto;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button
+    {
+        display: block;
+
+        width: 3vw;
+        height: 3vw;
+
+        cursor: pointer;
+    }
+
+    .upper-button-block
+    {
+        position: absolute;
+
+        display: flex;
+
+        width: 90vw;
+
+        justify-content: space-between;
+    }
+
+    .auto-button,
+    .count
+    {
+        font-size: 1.5vw;
+		font-family: a_LCDNovaObl;
+
+        display: flex;
+
+        width: 10vw;
+        height: 3vw;
+
+        border: 2px solid;
+        border-radius: 7px;
+
+        justify-content: center;
+        align-items: center;
+    }       
+</style>
+    <title>Мои Сертификаты</title>
+</head>
+<body>
+    <div class="upper-button-block">
+        <button id="auto_button" class="auto-button">Auto-Play</button>
+        <div id="count" class="count"></div>
+    </div>
+    <div class="button-container">
+            <button id="prev_button" class="prevButton">&#9668;</button>
+            <button id="next_button" class="nextButton">&#9658;</button>
+    </div>
+    <div id="wrapper" class="wrapper"></div>
+<script>
+    const wrapper = document.getElementById('wrapper'),
+          count = document.getElementById('count'),
+          autoButton = document.getElementById('auto_button'),
+          nextButton = document.getElementById('next_button'),
+          prevButton = document.getElementById('prev_button');
+
+
+    fetch('https://v-glebik.site/json/certificates.json')
+    .then((response) => response.json())
+    .then((data) => {
+        for(let i = 0; i < data.length; i++) {
+                
+            let certificateContainer = document.createElement('div');
+            certificateContainer.setAttribute('class', 'certificate-container');
+            wrapper.appendChild(certificateContainer);
+            certificateContainer.innerHTML = `<img src="${data[i].url}">`;
+        }
+        
+        let certificateContainers = document.getElementsByClassName('certificate-container');
+        let x = 0;
+        certificateContainers[x].classList.add('visible'); 
+        count.innerText = '1';
+
+        const showCertificates = (n) => {
+            certificateContainers[x].classList.remove('visible');
+            x = (n + certificateContainers.length) % certificateContainers.length;
+            certificateContainers[x].classList.add('visible');   
+            count.innerText = x + 1;
+        };
+
+        const showNextCertificate = () => {
+            showCertificates(x + 1);
+        };
+
+        const showPrevCertificate = () => {
+            showCertificates(x - 1);
+        };
+             
+        let flag = true;
+        autoButton.onclick = () => {
+            if(flag) {
+                var start = setInterval(showNextCertificate, 4000);
+                autoButton.innerText = 'Pause';
+                flag = false;
+            } else {
+                clearInterval(start);
+                autoButton.innerText = 'Auto-Play';
+                flag = true;
+            }
+        };
+
+        nextButton.onclick = showNextCertificate;
+        prevButton.onclick = showPrevCertificate;
+    })
+    .catch(alert);
+</script>
+</body>
+</html>

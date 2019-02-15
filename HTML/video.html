@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+.container
+{
+    position: relative;
+    top: 40px;
+}
+
+#iframe
+{
+    position: absolute;
+    z-index: 100;
+    top: 90px;
+    left: 380px;
+}
+
+#video_remove_button
+{
+    position: absolute;
+    z-index: 300;
+    top: 90px;
+    right: 400px;
+
+    display: none;
+}
+
+#play
+{
+    position: absolute;
+    z-index: 200;
+    top: 190px;
+    left: 580px;
+
+    width: 12vw;
+
+    cursor: pointer;
+}
+
+img
+{
+    max-width: 100%;
+}
+</style>
+    <title>VIDEO</title>
+</head>
+<body>
+    <div class="container">
+
+        <button id="video_remove_button">X</button>
+        
+        <img id="poster" src="https://v-glebik.site/images/main/poster.png" alt="">
+        
+        <img id="play" src="https://v-glebik.site/images/main/play.png" alt="" title="Смотреть Видео">
+        
+        <iframe id="iframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+<script>
+var play = document.getElementById('play'),
+	poster = document.getElementById('poster'),
+	videoRemoveButton = document.getElementById('video_remove_button'),
+	iframe = document.getElementById('iframe');
+	
+play.addEventListener('click', displayVideo);
+
+videoRemoveButton.addEventListener('click', hideVideo);
+
+function displayVideo() {
+  iframe.setAttribute('src', 'https://youtube.com/embed/PSMtZiQQPuQ?autoplay=1');
+  play.style.zIndex = '10';
+  poster.style.opacity = '0.5';
+  videoRemoveButton.style.display = 'inline-block';
+}
+
+function hideVideo () {
+  iframe.setAttribute('src', '');
+  play.style.zIndex = '200';
+  poster.style.opacity = '1.0';
+  videoRemoveButton.style.display = 'none';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Мои сертификаты</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script> 
+	$(function() {
+	$.get('https://v-glebik.site/json/certificates.json', function(data) {
+	    var imgCount = data.length,
+		    certificate = $('#certificate'),
+		    toggle = $('#auto_toggle'),
+		    count = $('#count'),
+		    i = 0,
+		    flag = false;
+	 
+	    certificate.html ('<img src=' + data [i].url + '>');
+	    count.text (1);
+	    $ ('#button_next').on ('click', showNextCertificate);
+	    $ ('#button_prev').on ('click', showPrevCertificate);
+	    toggle.on ('click', autoToggle);
+	 
+	    function showNextCertificate() {
+		    i++;
+		    if (i == imgCount) 
+		    i = 0;
+		    certificate.html ('<img src=' + data [i].url + '>');	
+		    count.text (i + 1);
+	    }
+	
+	    function showPrevCertificate() {		
+		    if (i == 0) 
+		    i = imgCount;
+		    i--;
+		    certificate.html ('<img src=' + data [i].url + '>');	
+		    count.text (i + 1);
+	    }
+	
+	    function autoToggle () {
+		    flag = !flag;
+		    if (flag) {
+			    this.timerId = setInterval (showNextCertificate, 3000);
+			    toggle.text('AUTO OFF');
+		    } else {
+			    clearInterval(this.timerId);	
+			 toggle.text('AUTO ON');
+		    }
+	    }	
+    });
+	});
+	</script>
+
+	<style>
+
+		@font-face {
+  			font-family: a_LCDNovaObl;
+  			src: url(https://v-glebik.site/fonts/a_lcdnovaobl_[allfont.ru].ttf);
+		}
+ 
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.certificate {
+			width: 861px;
+			height: 629px;
+		}
+	
+		.count {
+			margin: -38px auto 15px;
+			width: 70px;
+			height: 40px;
+			border: 2px solid red;
+			border-radius: 5px;
+			background-color: #00ff00;
+			font-family: 'a_LCDNovaObl', arial;
+			text-align: center;
+			font-size: 30px;
+			line-height: 40px;
+			color: #ff0000;
+		}
+		
+		img {
+			max-width: 100%;
+		}
+
+		.button {
+			width: 30px;
+			height: 50px;
+			margin: 0 20px;
+			border: 2px solid red;
+			border-radius: 5px;
+			background-color: #00ff00;
+			text-align: center;
+			font-size: 15px;
+			color: red;
+		}
+
+		.toggle-button {
+			width: 100px;
+			height: 40px;
+			font-size: 15px;	
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+		button:focus {
+			outline: none;
+		}
+
+	</style> 
+
+</head>
+
+<body>
+	<button id="auto_toggle" class="toggle-button">AUTO ON</button>
+	<div id="count" class="count"></div>
+	<div class="container">
+		<button id="button_prev"  class="button">&#9668;</button>
+    	<div id="certificate" class="certificate"></div>
+		<button id="button_next" class="button">&#9658;</button>
+	</div>
+</body>
+
+</html>
