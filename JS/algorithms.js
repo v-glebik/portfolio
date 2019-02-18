@@ -50,3 +50,51 @@ const sortBySelect = (list) => {
 
 sortBySelect(arr);
 alert(newArr);
+
+//рекурсивная функция для подсчета суммы елементов в списке 
+
+const sumElems = (list) => {
+	if(list.length == 0) return 0;
+	else return list[0] + sumElems(list.slice(1));
+};
+
+sumElems(arr);
+
+//рекурсивная функция для подсчета количества елементов в списке
+
+const countElems = (list) => {
+	if(list.length == 0) return 0;
+	else return 1 + countElems(list.slice(1));
+};
+
+countElems(arr);
+
+//функция для поиска максимального элемента в списке
+
+const findMaxElem = (list) => {
+	let maxElem = list[0];
+	for (let i = 1; i < list.length; i++) {
+		if(maxElem < list[i]) maxElem = list[i];
+	}
+	return maxElem;
+};
+
+findMaxElem(arr);
+
+//рекурсивная функция для быстрой сортировки
+
+const quickSearch = (list) => {
+	if(list.length <= 1) return list;
+	else {
+		let stand = list[0];
+		let leftSubstr = [];
+		let rightSubstr = [];
+		for(let i = 1; i < list.length; i++) {
+			if(stand > list[i]) leftSubstr.push(list[i]);
+			else if(stand < list[i]) rightSubstr.push(list[i]);
+		}
+		return quickSearch(leftSubstr).concat(stand).concat(quickSearch(rightSubstr));
+	}
+};
+
+quickSearch(arr);
