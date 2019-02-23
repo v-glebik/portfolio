@@ -103,6 +103,16 @@ for(let i = 0; i < n; i++) arr.push(fibb(i));
 
 console.log(arr);
 
+//8) Создать массив, каждый элемент которого равен квадрату своего номера.
+
+arr = [];
+
+for(let i = 0; i < arrLength; i++) {
+	arr.push(Math.pow(i, 2));
+}
+
+console.log(arr);
+
 
 
 
