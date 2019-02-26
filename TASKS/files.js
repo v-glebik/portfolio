@@ -18,19 +18,32 @@ console.log(file);
 
 file = 'Lorem ipsum dolor sit, amet 1consectetur adipisicing elit. S22equi similique at, labor333um asperiores, magni blanditiis nam dolores quibusdam volupt4444atum culpa repudiandae accusantium55555.',
 arr = file.split(' '),
-arr2 = [],
-regExp = /\d+/;
+arr2 = [];
+let regExp = /\d+/;
 
 for(let word of arr) {
-if(!regExp.test(word)) arr2.push(word);
+	if(!regExp.test(word)) arr2.push(word);
 }
 
 file = arr2.join(' ');
 
 console.log(file);
 
+//3) Дан текстовый файл. Создать новый файл, каждое слово которого получается 
+//из соответствующего слова исходного файла перестановкой букв в обратном порядке.
 
+file = 'Lorem ipsum dolor sit, amet 1consectetur adipisicing elit';
+arr = file.split(' '),
+arr2 = [];
 
+for(let word of arr) {
+	let newWord = word.split('').reverse().join('');
+	arr2.push(newWord);
+}
+
+file = arr2.join(' ');
+
+console.log(file);
 
 
 
