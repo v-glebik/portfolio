@@ -1,49 +1,109 @@
 //РЕШЕНИЕ ЗАДАЧ НА ФАЙЛЫ
 
-//1) Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа.
+//пепременные, которые будут использоваться в коде
 
-let file = '1,2,3,4,5,6,7,8,9,10,11,12',
-	arr = file.split(','),
-	arr2 = [];
-	
-for(let num of arr) {
-	if(num % 2 != 0) arr2.push(num);
+const fileContent1 = 'some ugly text',
+	fileContent2 = '1,2,3,4,5,6,7,8,9,10,11,12',
+	fileContent3 = '1Lorem ipsum d22olor sit, ame333t consectetur adipi4444sicing elit. Sequi55555 similique at.',
+	file1 = new File([fileContent1], 'file-1.txt'),
+	file2 = new File([fileContent2], 'file-2.txt'),
+	file3 = new File([fileContent3], 'file-3.txt');
+let	fileResult,
+	functionResult;
+
+//универсальная функция, которая принимает исходный файл (парам1), 
+//затем обрабатывает его в зависимости от задачи (функция callback)
+
+function parseFile(file, callback) {
+	let fileReader = new FileReader();
+
+	fileReader.onload = function(event) {
+		fileResult = event.target.result;
+
+		callback();
+
+		let nextFile = new File([functionResult], 'next-file.txt');
+
+		let nextFileReader = new FileReader();
+
+		nextFileReader.onload = function(e) {
+			console.log(e.target.result);
+		};
+
+		nextFileReader.readAsText(nextFile);
+	};
+
+	fileReader.readAsText(file);
 }
 
-file = arr2.join();
+//1) перевести все буквы в верхний регистр
 
-console.log(file);
-
-//2) В данном текстовом файле удалить все слова, которые содержат хотя бы одну цифру.
-
-file = 'Lorem ipsum dolor sit, amet 1consectetur adipisicing elit. S22equi similique at, labor333um asperiores, magni blanditiis nam dolores quibusdam volupt4444atum culpa repudiandae accusantium55555.',
-arr = file.split(' '),
-arr2 = [];
-let regExp = /\d+/;
-
-for(let word of arr) {
-	if(!regExp.test(word)) arr2.push(word);
+function task1() {
+	functionResult = fileResult.toUpperCase();
 }
 
-file = arr2.join(' ');
+//2) переставить все слова наоборот
 
-console.log(file);
+function task2() {
+	functionResult = fileResult.split(' ').reverse().join(' ');
+}
 
 //3) Дан текстовый файл. Создать новый файл, каждое слово которого получается 
 //из соответствующего слова исходного файла перестановкой букв в обратном порядке.
 
-file = 'Lorem ipsum dolor sit, amet 1consectetur adipisicing elit';
-arr = file.split(' '),
-arr2 = [];
-
-for(let word of arr) {
-	let newWord = word.split('').reverse().join('');
-	arr2.push(newWord);
+function task3() {
+	functionResult = [];
+	let array = fileResult.split(' ');
+	for(let val of array) {
+		let reverseArray = val.split('').reverse().join('');
+		functionResult.push(reverseArray);
+	}
 }
 
-file = arr2.join(' ');
+//4) к каждому слову добавить "lll"
 
-console.log(file);
+function task4() {
+	functionResult = [];
+	let array = fileResult.split(' ');
+	for(let val of array) {
+		val = val + 'lll';
+		functionResult.push(val);
+	}
+}
+
+//5) Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа.
+
+function task5() {
+	let	array = fileResult.split(',');
+	functionResult = [];
+	
+	for(let num of array) {
+		if(num % 2 != 0) functionResult.push(num);
+	}
+
+	functionResult = functionResult.join();
+}
+
+//6) В данном текстовом файле удалить все слова, которые содержат хотя бы одну цифру.
+
+function task6() {
+	let array = fileResult.split(' ');
+	functionResult = [];
+	const regExp = /\d+/;
+
+	for(let word of array) {
+		if(!regExp.test(word)) functionResult.push(word);
+	}
+
+	functionResult = functionResult.join(' ');
+}
+
+parseFile(file1, task1);
+parseFile(file1, task2);
+parseFile(file1, task3);
+parseFile(file1, task4);
+parseFile(file2, task5);
+parseFile(file3, task6);
 
 
 
