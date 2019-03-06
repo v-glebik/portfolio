@@ -35,3 +35,43 @@ ${str.slice(-3)}`);
 }
 
 
+//4) Сформировать строку из 10 символов. На четных позициях должны находится четные цифры, на нечетных позициях - буквы.
+
+let letters = ['a', 'b', 'c', 'd', 'e'];
+
+str = '';
+
+for(let i = 0, j = 0; i < 10; i++) {
+	if(i % 2 == 0) str = str + i;
+	else str = str + letters[j++];
+}
+
+console.log(str);
+
+//можно сгенерировать алфавит, тогда код будет выглядеть так:
+
+let length = 32;
+
+function getAlphabet() { 
+    let alphabet = [],
+        index = 1040;
+
+    while(length--) {
+        alphabet.push(String.fromCharCode(index++));
+    }
+    return alphabet;
+}
+
+letters = getAlphabet(),
+str = '';
+
+function getString(strLength) {
+
+    for(let i = 0, j = 0; i < strLength; i++) {
+	    if(i % 2 == 0) str = str + i;
+	    else str = str + letters[j++];
+    } 
+}
+
+getString(20);
+console.log(str);
