@@ -13,7 +13,6 @@ function task1(arrLength) {
 		if(i == 0 || i == arrLength - 1) arr.push(1);
 		else arr.push(0);
 	}
-
 	return arr;
 }
 

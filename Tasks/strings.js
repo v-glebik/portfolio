@@ -67,8 +67,8 @@ function getAlphabet() {
 }
 
 function getString(strLength) {
-	let letters = getAlphabet();
-	let str = '';
+	let letters = getAlphabet(),
+	    str = '';
 
 	if(strLength > maxLength) strLength = maxLength;
 
