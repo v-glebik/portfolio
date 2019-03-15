@@ -1,10 +1,12 @@
+/* eslint-disable no-console */
+/* eslint-disable no-mixed-spaces-and-tabs */
 //ЗАДАЧИ НА СТРОКИ:
 
 //1) Дана строка. Вывести ее три раза через запятую и показать количество символов в ней.
 
 let str = 'stroka',
-    repeatCount = 3,
-    newStr = str;
+	repeatCount = 3,
+	newStr = str;
 
 for(let i = 1; i < repeatCount; i++) newStr = newStr + ', ' + str;
 
@@ -27,11 +29,11 @@ str = 'str',
 newStr = '';
 
 if(str.length > 5) {
-    console.log(`${str.slice(0,3)}
+	console.log(`${str.slice(0,3)}
 ${str.slice(-3)}`);
 } else {
-    for(let i = 1; i <= str.length; i++) newStr+= str[0];
-    console.log(`${newStr}`);
+	for(let i = 1; i <= str.length; i++) newStr+= str[0];
+	console.log(`${newStr}`);
 }
 
 
@@ -50,28 +52,31 @@ console.log(str);
 
 //можно сгенерировать алфавит, тогда код будет выглядеть так:
 
-let length = 32;
+let length = 32,
+	maxLength = length * 2;
 
 function getAlphabet() { 
-    let alphabet = [],
-        index = 1040;
+	let alphabet = [],
+		index = 1040,
+		count = length;
 
-    while(length--) {
-        alphabet.push(String.fromCharCode(index++));
-    }
-    return alphabet;
+	while(count--) {
+		alphabet.push(String.fromCharCode(index++));
+	}
+	return alphabet;
 }
-
-letters = getAlphabet(),
-str = '';
 
 function getString(strLength) {
+	let letters = getAlphabet();
+	let str = '';
 
-    for(let i = 0, j = 0; i < strLength; i++) {
+	if(strLength > maxLength) strLength = maxLength;
+
+	for(let i = 0, j = 0; i < strLength; i++) {
 	    if(i % 2 == 0) str = str + i;
 	    else str = str + letters[j++];
-    } 
+	} 
+	return str;
 }
 
-getString(20);
-console.log(str);
+getString(64);
