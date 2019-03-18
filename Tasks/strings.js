@@ -4,53 +4,67 @@
 
 //1) Дана строка. Вывести ее три раза через запятую и показать количество символов в ней.
 
-let str = 'stroka',
-	repeatCount = 3,
-	newStr = str;
+function task1() {
+	let str = 'stroka',
+		repeatCount = 3,
+		newStr = str;
 
-for(let i = 1; i < repeatCount; i++) newStr = newStr + ', ' + str;
+	for(let i = 1; i < repeatCount; i++) newStr = newStr + ', ' + str;
 
-console.log(`Новая Строка: ${newStr}
-Кол-во Символов: ${newStr.length}`);
+	return `Новая Строка: ${newStr}
+Кол-во Символов: ${newStr.length}`;
+}
+
+task1();
 
 
 //2) Дана строка. Вывести первый, последний и средний (если он есть)) символы.
 
-str = 'str-oka';
+function task2() {
+	let str = 'str-oka';
 
-console.log(`Первый Символ: ${str[0]}
-Последний Символ: ${str[str.length - 1]}`);
+	if(str.length % 2 == 0) {
+		return `Первый Символ: ${str[0]}
+Последний Символ: ${str[str.length - 1]}`;
+	} else return `Средний Символ: ${str[(str.length - 1) / 2]}`;
+}
 
-if(str.length % 2 != 0) console.log(`Средний Символ: ${str[(str.length - 1) / 2]}`);
+task2();
 
 
 //3) Дана строка. Вывести первые три символа и последний три символа, если длина строки больше 5. 
 //Иначе вывести первый символ столько раз, какова длина строки.
 
-str = 'str',
-newStr = '';
+function task3() {
+	let str = 'str',
+		newStr = '';
 
-if(str.length > 5) {
-	console.log(`${str.slice(0,3)}
-${str.slice(-3)}`);
-} else {
-	for(let i = 1; i <= str.length; i++) newStr+= str[0];
-	console.log(`${newStr}`);
+	if(str.length > 5) {
+		return `${str.slice(0,3)}
+${str.slice(-3)}`;
+	} else {
+		for(let i = 1; i <= str.length; i++) newStr+= str[0];
+		return `${newStr}`;
+	}
 }
+
+task3();
 
 
 //4) Сформировать строку из 10 символов. На четных позициях должны находится четные цифры, на нечетных позициях - буквы.
 
-let letters = ['a', 'b', 'c', 'd', 'e'];
+function task4() {
+	let letters = ['a', 'b', 'c', 'd', 'e'],
+		str = '';
 
-str = '';
-
-for(let i = 0, j = 0; i < 10; i++) {
-	if(i % 2 == 0) str = str + i;
-	else str = str + letters[j++];
+	for(let i = 0, j = 0; i < 10; i++) {
+		if(i % 2 == 0) str = str + i;
+		else str = str + letters[j++];
+}
+	return str;
 }
 
-console.log(str);
+task4();
 
 //можно сгенерировать алфавит, тогда код будет выглядеть так:
 
