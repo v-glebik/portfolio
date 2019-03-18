@@ -96,3 +96,22 @@ function getString(strLength) {
 }
 
 getString(64);
+
+
+//5) Дана строка. Показать номера символов, совпадающих с последним символом строки.
+
+function task5() {
+	let str = 'zadacha',
+		lastSymbol = str[str.length - 1],
+		arr = [];
+
+	for(let i = 0; i < str.length; i++) {
+		if(str[i] == lastSymbol) arr.push(i);
+	}
+
+	arr.pop();
+
+	return arr;
+}
+
+task5();
