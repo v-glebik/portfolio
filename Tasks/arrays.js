@@ -166,6 +166,42 @@ function task9(arrLength) {
 task9(20);
 
 
+//10) Создать массив, состоящий из троек подряд идущих одинаковых элементов.
+
+function task10(length, repeat) {
+	let arr = [];
+
+	for(let i = 0; i <= length; i++) {
+		var newElem;
+		var elem = Math.floor(Math.random() * 10);
+		
+		for(let i = 0; i < repeat; i++) {
+			if(newElem == elem) arr.pop();
+			else arr.push(elem);
+		}
+		newElem = elem;
+		}
+	return arr;
+}
+
+task10(10, 3);
+
+//11) Создать массив, который одинаково читается как слева направо, так и справа налево.
+
+function task11(elemsCount) {
+	let arr = ['@'];
+
+	for(let i = 0; i <= elemsCount; i++) {
+		let elem = Math.floor(Math.random() * 10);
+		arr.push(elem);
+		arr.unshift(elem);
+		}
+	return arr;
+}
+
+task11(10);
+
+
 
 
 
