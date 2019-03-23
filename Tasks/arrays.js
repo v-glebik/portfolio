@@ -202,6 +202,33 @@ function task11(elemsCount) {
 task11(10);
 
 
+//12) Сформировать массив из случайных чисел, в которых ровно две единицы, стоящие на случайных позициях.
+
+function task12(quant) {
+	let arr = [];
+	var count = 0;
+
+	while(count < quant) {
+		count = 0;
+		let elem = Math.floor(Math.random() * 10);
+		arr.push(elem);
+		for(let i = 0; i < arr.length; i++) {
+			if(arr[i] == 1) count++;
+		}
+	}
+	return arr;
+}
+
+task12(2);
+
+
+
+
+
+
+
+
+
 
 
 
