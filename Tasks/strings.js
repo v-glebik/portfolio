@@ -2,9 +2,9 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 //ЗАДАЧИ НА СТРОКИ:
 
-const str1 = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-		str2 = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit',
-		str3 = '++--0+00--0+++000--++';
+let str1 = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+	str2 = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit',
+	str3 = '++--0+00--0+++000--++';
 
 //1) Дана строка. Вывести ее три раза через запятую и показать количество символов в ней.
 
@@ -146,7 +146,6 @@ task6_2(str1);
 //7) Дана строка. Определите общее количество символов '+' и '-' в ней. А так же сколько таких символов, после которых следует цифра ноль.
 
 function task7(string) {
-
 	let countPlus = 0,
 		countMinus = 0,
 		countNull = 0;
@@ -165,3 +164,67 @@ function task7(string) {
 }
 
 task7(str3);
+
+
+//8) Дана строка. Определите, какой символ в ней встречается раньше: 'x' или 'w'. Если какого-то из символов нет, вывести сообщение об этом.
+
+function task8(string, firstSymbol, secondSymbol) {
+
+	for(let i = 0; i < string.length; i++) {
+		let symbol = string[i];
+
+		if(string.indexOf(firstSymbol) == -1 && string.indexOf(secondSymbol) == -1) {
+			alert('В строке нет таких символов');
+			return;
+		} else if(string.indexOf(firstSymbol) == -1) {
+			alert(`В строке нет символа: ${firstSymbol}`);
+			return;
+		} else if(string.indexOf(secondSymbol) == -1) {
+			alert(`В строке нет символа: ${secondSymbol}`);
+			return;
+		} else {
+			if(symbol === firstSymbol) {
+				alert (`Первый символ: ${firstSymbol}`);
+				return;
+			} else if(symbol === secondSymbol) {
+				alert(`Первый символ: ${secondSymbol}`);
+				return;
+			}
+		}
+	}
+}
+
+task8(str1, 'w', 'x');
+
+
+//9) Даны две строки. Вывести большую по длине строку столько раз, на сколько символов отличаются строки.
+
+function task9(...args) {
+	let array = [];
+
+	for(let i = 0; i < args.length; i++) {
+		if(typeof args[i] === 'string') array.push(args[i].length);
+	}
+
+	let maxLength = array[0],
+		minLength = array[0],
+		maxIndex = 0;
+
+	for (let i = 1; i < array.length; i++) {
+		if(array[i] > maxLength) {
+			maxLength = array[i];
+			maxIndex = i;
+		}
+		if(array[i] < minLength) {
+			minLength = array[i];
+		}
+	}
+
+	let result = maxLength - minLength;
+	
+	for(let j = 1; j <= result; j++) {
+		document.write(`${j} ${args[maxIndex]}<br>`);
+	}		
+}
+
+task9(str1, str2, str3);
