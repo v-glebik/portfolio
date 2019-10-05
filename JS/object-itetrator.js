@@ -1,6 +1,6 @@
 //функция-итератор для перебора значений неитерируемого объекта
 
-let object = {
+const object = {
 	name: 'obj-name',
 	age: 100
 };
@@ -8,8 +8,8 @@ let object = {
 //вариант-1 (через Object.keys())
 
 object[Symbol.iterator] = function() {
-	let objectKeys = Object.keys(object),
-		count = 0;
+	const objectKeys = Object.keys(object),
+		let count = 0;
 
 	return{
 		next() {
@@ -32,8 +32,8 @@ for(let val of object) alert(val);
 //вариант-2 (через Object.values())
 
 object[Symbol.iterator] = function() {
-	let objectValues = Object.values(object),
-		count = 0;
+	const objectValues = Object.values(object),
+		let count = 0;
 
 	return {
 		next() {
