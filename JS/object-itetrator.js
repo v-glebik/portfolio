@@ -10,7 +10,7 @@ let count = 0;
 //вариант-1 (через Object.keys())
 
 object[Symbol.iterator] = function() {
-	let objectKeys = Object.keys(object),
+	let objectKeys = Object.keys(object);
 
 	return{
 		next() {
@@ -33,7 +33,7 @@ for(let val of object) alert(val);
 //вариант-2 (через Object.values())
 
 object[Symbol.iterator] = function() {
-	let objectValues = Object.values(object),
+	let objectValues = Object.values(object);
 
 	return {
 		next() {
