@@ -5,11 +5,12 @@ const object = {
 	age: 100
 };
 
+let count = 0;
+
 //вариант-1 (через Object.keys())
 
 object[Symbol.iterator] = function() {
-	const objectKeys = Object.keys(object),
-		let count = 0;
+	let objectKeys = Object.keys(object),
 
 	return{
 		next() {
@@ -32,8 +33,7 @@ for(let val of object) alert(val);
 //вариант-2 (через Object.values())
 
 object[Symbol.iterator] = function() {
-	const objectValues = Object.values(object),
-		let count = 0;
+	let objectValues = Object.values(object),
 
 	return {
 		next() {
