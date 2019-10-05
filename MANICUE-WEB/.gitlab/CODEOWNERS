@@ -1,0 +1,7 @@
+# Technical writing team are the default reviewers for everything in `doc/`
+/doc/ @tagea @mingaylov @bkadiskaliev @MAXtercutor @gekatonhair @SemyonK
+
+# Frontend maintainers should see everything in `app/`
+* @tagea @mingaylov @bkadiskaliev @MAXtercutor @gekatonhair @SemyonK
+
+
