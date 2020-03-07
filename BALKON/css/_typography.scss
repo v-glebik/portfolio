@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Gilroy-Black";
+    src: url('../assets/fonts/Gilroy-Black.ttf');
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url('../assets/fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: "Gilroy-Extrabold";
+    src: url('../assets/fonts/Gilroy-Extrabold.ttf');
+}
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url('../assets/fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url('../assets/fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: "Gilroy-Semibold";
+    src: url('../assets/fonts/Gilroy-Semibold.ttf');
+}
+
+html {
+    font-family: "Gilroy-Regular";
+    font-size: 10px;
+}
+h1 {
+    font-family: "Gilroy-Semibold";
+    @include fontStyle(3.8rem, 62px, 400);
+    color: #000000;
+}
+h2 {
+    font-family: "Gilroy-Semibold";
+    @include fontStyle(3.2rem, 62px, 400);
+    color: #000000;
+
+    text-align: center;
+    margin: 0;
+}
+h3 {
+    @include fontStyle(1.8rem, 24px, 500);
+    color: #ffffff;
+}
+h4 {
+    @include fontStyle(2.4rem, 31px, 500);
+    color: #000000;
+}
+input[type="text"],
+textarea {
+    background-color: #f6f5f5;
+    @include fontStyle(1.5rem, 24px, 400);
+    color: #3f3f3f;
+}
+input[type="submit"] {
+    background-color: #ffbf29;
+    @include fontStyle(1.8rem, 24px, 500);
+    color: #000000;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    h1 {
+        font-family: "Gilroy-Extrabold";
+        font-size: 2.6rem;
+        line-height: 31px;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 2.4rem;
+        line-height: 31px;
+
+    }
+    h4 {
+        font-size: 1.6rem;
+        line-height: 20px;
+    }
+}

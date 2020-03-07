@@ -1,0 +1,281 @@
+.form {
+    max-width: 1005px;
+    box-shadow: 0 0 11px 5px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 35px 30px;
+    // .form__h4
+
+    &__h4 {
+        width: 741px;
+        margin-top: 0;
+    }
+
+    // .form__inputs
+
+    &__inputs {
+        max-width: 944px;
+        @extend %flex-basic;
+        margin-top: 40px;
+        input[type="text"] {
+            width: 180px;
+            height: 45px;
+        }
+        input[type="submit"] {
+            width: 556px;
+            height: 45px;
+        }
+    }
+}
+
+.big-form {
+    max-width: 1005px;
+    box-shadow: 0 0 11px 5px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    padding: 35px 30px;
+    // .big-form__h4
+
+    &__h4 {
+        width: 914px;
+        margin-top: 0;
+    }
+
+    // .big-form__inputs
+
+    &__inputs {
+        max-width: 944px;
+        @extend %flex-basic;
+    }
+
+    // .big-form__left-block
+
+    &__left-block {
+        
+            max-width: 570px;
+            textarea {
+                width: 570px;
+                height: 155px;
+            }
+    }
+
+    // .big-form__right-block
+
+    &__right-block {
+        max-width: 360px;
+        height: 155px;
+        @extend %flex-basic;
+        flex-direction: column;
+        input {
+            width: 360px;
+            height: 45px;
+        }
+        input:nth-child(2) {
+            position: relative;
+            top: -5px;
+        }
+    }
+}
+
+
+@media (max-width: 1170px) {
+    .form {
+        max-width: 616px;
+    
+        &__h4 {
+            width: 556px;
+        }
+    
+        &__inputs {
+            max-width: 616px;
+            flex-wrap: wrap;
+
+            input[type="submit"] {
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+    .big-form {
+        max-width: 616px;
+        
+
+    
+        &__h4 {
+            width: 556px;
+            
+        }
+    
+    
+        &__inputs {
+            max-width: 556px;
+            flex-wrap: wrap;
+        }
+    
+        
+    
+        &__left-block {
+            
+                max-width: 556px;
+                textarea {
+                    width: 556px;
+        
+                }
+        }
+    
+    
+        &__right-block {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width: 800px) {
+    .form {
+        max-width: 292px;
+        
+        padding: 32px 20px;
+    
+        &__h4 {
+            width: 250px;
+        }
+    
+        &__inputs {
+            max-width: 250px;
+            height: 225px;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin-top: 40px;
+            input[type="text"] {
+                width: 250px;
+                height: 45px;
+            }
+            input[type="text"]:nth-of-type(2) {
+                position: relative;
+                top: -10px;
+            }
+            input[type="submit"] {
+                width: 250px;
+                height: 80px;
+
+                white-space: normal;
+                text-align: left;
+            }
+        }
+    }
+
+    .big-form {
+        max-width: 292px;
+       
+    
+        padding: 25px 20px 50px;
+    
+        &__h4 {
+            width: 252px;
+        }
+    
+        &__inputs {
+            max-width: 292px;
+            flex-wrap: wrap;
+        }
+    
+        &__left-block {
+            
+                max-width: 292px;
+                textarea {
+                    width: 245px;
+                    height: 105px;
+                }
+        }
+    
+        &__right-block {
+            max-width: 292px;
+            height: auto;
+            
+            input {
+                width: 245px;
+                height: 45px;
+
+                margin-top: 20px;
+            }
+            input:nth-child(2) {
+               
+                top: 0;
+            }
+            input:nth-child(3) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 321px) {
+
+    .form {
+        max-width: 270px;
+        
+        padding: 32px 15px;
+    
+        &__h4 {
+            width: 250px;
+        }
+    
+        &__inputs {
+            max-width: 240px;
+            
+            input[type="text"] {
+                width: 240px;
+                
+            }
+            
+            input[type="submit"] {
+                width: 240px;
+               
+            }
+        }
+    }
+
+    
+    .big-form {
+        max-width: 270px;
+       
+    
+        padding: 25px 10px 50px;
+    
+        
+    
+        &__inputs {
+            max-width: 270px;
+            
+        }
+    
+        &__left-block {
+            
+                max-width: 270px;
+                
+        }
+    
+        &__right-block {
+            max-width: 270px;
+            
+            input {
+                width: 230px;
+                height: 45px;
+
+                margin-top: 20px;
+            }
+            
+        }
+    }
+
+}
+

@@ -1,0 +1,100 @@
+.videos .owl-prev,
+.videos .owl-next {
+  position: absolute !important;
+  bottom: -70px !important;
+  font-size: 100px !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  color: transparent !important;
+  outline: none !important;
+  cursor: pointer !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.videos .owl-prev {
+  background-image: url("../assets/icons/left-arrow.png") !important;
+  left: 0 !important;
+}
+
+.videos .owl-next {
+  background-image: url("../assets/icons/right-arrow.png") !important;
+  right: 0 !important;
+}
+
+.videos .owl-dots {
+  width: 100px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  margin: 110px auto 0 !important;
+}
+
+.videos .owl-dot {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #000000 !important;
+  border-radius: 50% !important;
+}
+
+.videos .owl-dot.active {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #000000 !important;
+}
+
+.certificates .owl-prev,
+.certificates .owl-next {
+  position: absolute !important;
+  top: 0 !important;
+  font-size: 50px !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  color: transparent !important;
+  outline: none !important;
+  cursor: pointer !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.certificates .owl-prev {
+  background-image: url("../assets/icons/left-arrow.png") !important;
+  left: 0 !important;
+}
+
+.certificates .owl-next {
+  background-image: url("../assets/icons/right-arrow.png") !important;
+  right: 0 !important;
+}
+
+.certificates .owl-dots {
+  width: 100px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  margin: 110px auto 0 !important;
+}
+
+.certificates .owl-dot {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #000000 !important;
+  border-radius: 50% !important;
+}
+
+.certificates .owl-dot.active {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #000000 !important;
+}
+/*# sourceMappingURL=test.css.map */

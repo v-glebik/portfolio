@@ -1,0 +1,14 @@
+{
+  "name": "balkon-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "lite-server"
+  },
+  "author": "maxtercutor",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
