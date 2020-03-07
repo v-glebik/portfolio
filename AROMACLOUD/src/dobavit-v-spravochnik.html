@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--endbuild-->
+    <title>Добавить в справочник</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./glavnaya-karta-obektov.html" class="logo-img"><img src="./images/logo.png" alt=""></a>
+        <nav class="header-menu">
+                <ul>
+                    <li><a href="./glavnaya-karta-obektov.html">Главный экран</a></li>
+                    <div class="li">
+                    <li><a href="./spisok-klientov.html">Клиенты</a></li>
+                    <li class="plus"><a href="#"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./spisok-apparatov.html">Аппараты</a></li>
+                    <li class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./kartochka-obekta.html">Добавить объект</a></li>
+                    <li class="plus"><a href="#"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                </ul>
+        </nav>  
+        <div class="burger" data-toggle="modal" data-target="#modal_menu">
+            <div class="strip"></div>
+            <div class="strip"></div>
+            <div class="strip"></div>
+        </div>
+    </header>
+
+    <div class="desc-7-main">
+        <form class="add-block">
+            <div class="journal">Добавить нового клиента</div>
+            <label for="" class="journal journal-big">Название клиента</label>
+            <input type="text">
+            <label for="" class="journal journal-big">Описание клиента</label>
+            <input type="text">
+            <label for="" class="journal journal-big">Логин</label>
+            <input type="text">
+            <label for="" class="journal journal-big">Пароль к личному кабинету</label>
+            <input type="text">
+            <div class="button-block">
+                <div class="button" data-toggle="modal" data-target="#main_popup">Добавить в справочник</div>
+            </div>
+        </form>
+        <form class="add-block">
+            <div class="journal">Добавить новый объект</div>
+            <label for="" class="journal journal-big">Название объекта</label>
+            <input type="text">
+            <div class="address-input">
+                <div class="city">
+                    <label for="" class="journal journal-big">Город</label>
+                    <select name="" id="" class="min-input">
+                        <option value="">London</option>
+                        <option value="">Tokio</option>
+                        <option value="">Osaka</option>
+                        <option value="">Moscow</option>
+                        <option value="">Paris</option>
+                    </select>
+                </div>
+                <div class="city">
+                    <label for="" class="journal journal-big">Адрес</label>
+                    <input type="text" class="min-input">
+                </div>
+            </div>
+            <div class="button-block">
+                <div class="button" data-toggle="modal" data-target="#main_popup">Добавить в справочник</div>
+            </div>
+        </form>
+    </div>
+    <div class="modal fade" id="modal_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <nav class="modal-menu">
+                        <ul>
+                            <li><a href="./spisok-klientov.html">Клиенты</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                            <li><a href="./spisok-apparatov.html">Аппараты</a><div class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></div></li>
+                            <li><a href="./kartochka-obekta.html">Добавить объект</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                            <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                            <li class="login"><a href="#">Admin</a><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                        </ul>
+                </nav>  
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="main_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="main-popup">
+                    <p>Подтвердите операцию</p>
+                    <div class="buttons">
+                        <div class="button">Подтвердить</div>
+                        <div class="button">Отмена</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

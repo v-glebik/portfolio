@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--endbuild-->
+    <title>Жукрнал операций</title>
+</head>
+<body>
+        <header class="header">
+            <a href="./glavnaya-karta-obektov.html" class="logo-img"><img src="./images/logo.png" alt=""></a>
+                <nav class="header-menu">
+                        <ul>
+                            <li><a href="./glavnaya-karta-obektov.html">Главный экран</a></li>
+                            <div class="li">
+                            <li><a href="./spisok-klientov.html">Клиенты</a></li>
+                            <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                            </div>
+                            <div class="li">
+                            <li><a href="./spisok-apparatov.html">Аппараты</a></li>
+                            <li class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></li>
+                            </div>
+                            <div class="li">
+                            <li><a href="./kartochka-obekta.html">Добавить объект</a></li>
+                            <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                            </div>
+                            <li><a href="#">Журналы</a></li>
+                            <li><a href="#">Admin</a></li>
+                            <li><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                        </ul>
+                </nav>  
+                <div class="burger" data-toggle="modal" data-target="#modal_menu">
+                        <div class="strip"></div>
+                        <div class="strip"></div>
+                        <div class="strip"></div>
+                </div>
+            </header>
+    <div class="journal">Журнал операций</div>
+    <div class="strings">Строчек на странице: &nbsp;
+        <span class="cards-counter blue">5</span>&nbsp;
+        <span class="cards-counter">10</span>&nbsp;
+        <span class="cards-counter">20</span>&nbsp;
+        <span class="cards-counter">50</span>
+    </div>
+    <table class="table table-bordered table-hover">  
+        <tr>
+            <td>Дата/Время</td>
+            <td>Пользователь</td>
+            <td>Объект</td>
+            <td>Клиент</td>
+            <td>Аппарат</td>
+        </tr>
+        <tr>
+            <td>01.01 2020 20:30</td>
+            <td>Клиент</td>
+            <td>Лента ТК-22</td>
+            <td>ИП Иванов</td>
+            <td>ID 1111</td>
+        </tr>
+        <tr>
+            <td>01.01 2020 20:30</td>
+            <td>Admin</td>
+            <td>Лента ТК-22</td>
+            <td>ИП Иванов</td>
+            <td>ID 1112</td>
+        </tr>
+    </table>
+    <nav class="nav-desc">
+            <a href="#" class="back"><img src="./images/arrow-back.png" alt=""></a>
+            <ul class="ul-desc">
+                <li class="first active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#">11</a></li>
+                <li class="last"><a href="#">12</a></li>
+            </ul>
+            <a href="#" class="forth"><img src="./images/arrow-forth.png" alt=""></a>
+    </nav>  
+    <div class="modal fade" id="modal_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                    <nav class="modal-menu">
+                            <ul>
+                                <li><a href="./spisok-klientov.html">Клиенты</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./spisok-apparatov.html">Аппараты</a><div class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./kartochka-obekta.html">Добавить объект</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                                <li class="login"><a href="#">Admin</a><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                            </ul>
+                    </nav>  
+              </div>
+            </div>
+    </div>
+</body>
+</html>

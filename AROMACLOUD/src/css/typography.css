@@ -1,0 +1,615 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/pt_sans.ttf);
+}
+html {
+  font-size: 0.52083333vw;
+}
+input {
+  font-weight: 500;
+}
+.header-menu ul li a {
+  font-size: 2rem;
+  color: #181818;
+}
+.journal {
+  font-size: 2.4rem;
+  line-height: 3.64583333vw;
+  font-weight: 700;
+  color: #181818;
+}
+.strings {
+  font-size: 1.8rem;
+  line-height: 2.39583333vw;
+  color: #d0d0d0;
+}
+.table-bordered {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.journal-big {
+  line-height: 4.16666667vw;
+}
+.button {
+  font-size: 2.4rem;
+  line-height: 3.17708333vw;
+  color: #ffffff;
+}
+.sort {
+  font-size: 2.4rem;
+  line-height: 3.64583333vw;
+  color: #181818;
+}
+.opt {
+  font-size: 2.4rem;
+  line-height: 3.64583333vw;
+  color: #d0d0d0;
+}
+.head {
+  font-size: 1.8rem;
+  line-height: 1.71875vw;
+  color: #181818;
+}
+.cards-count {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #d0d0d0;
+}
+.blue {
+  color: #009fcf;
+}
+.card {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.bold {
+  font-weight: 700;
+}
+.card-text-min {
+  font-size: 1.4rem;
+  line-height: 0.9375vw;
+  color: #d0d0d0;
+}
+.fr {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.desc-1-inputs {
+  font-size: 2.4rem;
+  color: #181818;
+}
+.desc-2-header .text {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+p.desc-2 {
+  width: 78.75vw;
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #d0d0d0;
+  text-align: left;
+}
+.desc-2-selects-buttons .button {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #FFFFFF;
+}
+.desc-2-selects-buttons .btn-white {
+  color: #D0D0D0;
+}
+.desc-2-cards-count {
+  font-size: 1.8rem;
+  line-height: 3.59375vw;
+  color: #D0D0D0;
+}
+.desc-2-main p.norm {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-2-main .cat,
+.desc-2-main .name {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-2-main .name {
+  font-weight: 700;
+}
+.desc-2-main p.timer {
+  font-size: 2.2rem;
+  line-height: 0.52083333vw;
+  font-weight: 700;
+}
+.desc-2-main .aromat-apparat {
+  font-size: 2.4rem;
+  line-height: 1.30208333vw;
+  color: #181818;
+}
+.desc-2-main p.min {
+  max-width: 11.66666667vw;
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.desc-2-main p.norm.light {
+  color: #D0D0D0;
+}
+.desc-2-main p.norm.light a {
+  color: #D0D0D0;
+}
+.desc-2-main .rems {
+  line-height: 0.9375vw;
+}
+.desc-2-main .big-text {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.5625vw;
+  color: #181818;
+}
+.desc-2-main .days {
+  font-size: 1.8rem;
+  line-height: 1.04166667vw;
+  color: #181818;
+}
+.row-center {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-2-row .left {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-2-row .left .min {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.desc-2-row .button {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #FFFFFF;
+}
+.desc-2-row .btn--white {
+  color: #181818;
+}
+p.off,
+p.on {
+  position: relative;
+  top: 0.4vw;
+}
+p.off {
+  font-size: 1.2rem;
+  line-height: 0.83333333vw;
+  color: #F23838;
+  opacity: 0.5;
+}
+p.on {
+  font-size: 1.2rem;
+  line-height: 0.83333333vw;
+  color: #77D73C;
+  opacity: 0.5;
+}
+.desc-3-header .left-block {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-3-header .app {
+  line-height: 2.5vw;
+}
+.desc-3-header .app:hover {
+  cursor: pointer;
+}
+.desc-3-hm {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #D0D0D0;
+}
+.desc-3-main label {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-3-main select {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  font-weight: 300;
+  color: #181818;
+}
+.desc-3-main .right-block {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-3-main p.timer {
+  font-size: 2.4rem;
+  line-height: 0.52083333vw;
+  font-weight: 700;
+}
+.desc-3-row {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-3-row .circle {
+  font-size: 6.4rem;
+  line-height: 4.32291667vw;
+  color: #F23838;
+}
+.desc-4-header {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.desc-4-header input {
+  font-size: 2.4rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.light {
+  color: #d0d0d0;
+}
+.desc-4-main .left-block p {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.desc-4-main .left-block .counter {
+  font-size: 6.4rem;
+  line-height: 4.32291667vw;
+  color: #F23838;
+}
+.desc-4-main .right-block label {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #181818;
+}
+.desc-5-header p {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  text-decoration: underline;
+  color: #181818;
+}
+.desc-6-header {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+.ul-desc li a {
+  font-size: 1.8rem;
+  line-height: 1.19791667vw;
+  color: #D0D0D0;
+}
+.ul-desc li a:hover {
+  color: #181818;
+  text-decoration: none;
+}
+::-webkit-input-placeholder {
+  color: #d0d0d0;
+}
+::-moz-placeholder {
+  color: #d0d0d0;
+}
+:-moz-placeholder {
+  color: #d0d0d0;
+}
+:-ms-input-placeholder {
+  color: #d0d0d0;
+}
+.main-popup p {
+  font-size: 4.8rem;
+  line-height: 3.22916667vw;
+  color: #000000;
+}
+.select-button {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+}
+.select-button select {
+  color: #181818;
+}
+.select-button .button {
+  color: #ffffff;
+}
+table .table-header {
+  font-size: 1.4rem;
+  line-height: 0.9375vw;
+  font-weight: 700;
+  color: #181818;
+}
+table p {
+  font-size: 3.6rem;
+  line-height: 1.66666667vw;
+  font-weight: 500;
+  color: #181818;
+}
+.full-opacity {
+  opacity: 1 !important;
+}
+.prompt {
+  font-size: 2.6rem;
+  color: #181818;
+}
+.auth-container {
+  font-size: 2.4rem;
+  line-height: 2.08333333vw;
+  color: #181818;
+}
+.auth-container input {
+  font-size: 2.4rem;
+}
+.desc-7-main input,
+.desc-7-main select {
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+  text-align: left;
+}
+.time-table .text {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 1.61458333vw;
+  color: #181818;
+}
+@media (max-width: 880px) {
+  html {
+    font-size: 2.66666667vw;
+  }
+  .journal {
+    font-size: 1.8rem;
+  }
+  .journal-big {
+    line-height: 6.13333333vw;
+  }
+  .button {
+    font-size: 1.8rem;
+    line-height: 11.46666667vw;
+  }
+  select {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .card {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .card .show-on-card {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+    text-decoration: underline;
+    color: #181818;
+  }
+  .card-text-min {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .fr {
+    font-size: 1.8rem;
+    line-height: 5.33333333vw;
+  }
+  .filters .button {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+    color: #181818;
+  }
+  .filters select {
+    font-size: 1.2rem;
+    line-height: 4.26666667vw;
+    color: #D0D0D0;
+  }
+  #filters {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+    color: #181818;
+  }
+  #filters label {
+    font-weight: 500;
+  }
+  #modal_menu a {
+    font-size: 2.4rem;
+    line-height: 8.26666667vw;
+    color: #181818;
+  }
+  .desc-2-header .text {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  p.desc-2 {
+    width: 91.46666667vw;
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-2-selects-buttons .button {
+    font-size: 1.2rem;
+    line-height: 4.26666667vw;
+  }
+  .desc-2-main .card-header .text p {
+    line-height: 2.66666667vw;
+  }
+  .desc-2-main p.norm {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-2-main .cat,
+  .desc-2-main .name {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-2-main p.timer {
+    font-size: 1.6rem;
+    line-height: 5.6vw;
+  }
+  .desc-2-main .aromat-apparat {
+    font-size: 1.8rem;
+    line-height: 4.8vw;
+  }
+  .desc-2-main p.min {
+    max-width: 43.2vw;
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .desc-2-main .rems {
+    line-height: 4.8vw;
+  }
+  .desc-2-main .big-text {
+    line-height: 10.66666667vw;
+  }
+  .desc-2-main .days {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .row-center {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-2-row .left {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-2-row .left .min {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .desc-2-row .button {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-2-row p.min--mob {
+    line-height: 5.86666667vw;
+  }
+  .desc-3-header .left-block {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-3-header .app {
+    font-size: 1.2rem;
+    line-height: 9.6vw;
+  }
+  .desc-3-hm {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .desc-3-main label {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-3-main select {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-3-main .right-block {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .desc-3-main p.timer {
+    font-size: 1.8rem;
+    line-height: 5.33333333vw;
+  }
+  .desc-3-row {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-3-row .circle {
+    font-size: 4.8rem;
+    line-height: 16.53333333vw;
+  }
+  .desc-3-row input,
+  .desc-3-row .button {
+    font-size: 1.8rem;
+    line-height: 10.66666667vw;
+  }
+  .desc-3-footer-button {
+    font-size: 1.8rem;
+    line-height: 10.66666667vw;
+  }
+  .desc-4-header {
+    font-size: 1.2rem;
+    line-height: 4.26666667vw;
+  }
+  .desc-4-header input {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .desc-4-select-mobile {
+    font-size: 1.2rem;
+    line-height: 4.26666667vw;
+    color: #d0d0d0;
+  }
+  .desc-4-main .left-block p {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-4-main .left-block .counter {
+    font-size: 2.4rem;
+    line-height: 17.06666667vw;
+  }
+  .desc-4-main .right-block label {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-5-header p {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  #desc_5_filters {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .desc-6-header {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .main-popup p {
+    font-size: 2rem;
+    line-height: 5.16666667vw;
+    color: #000000;
+  }
+  .main-popup .button {
+    font-size: 1.8rem;
+    line-height: 8.33333333vw;
+  }
+  .select-button {
+    font-size: 1.8rem;
+    line-height: 8.26666667vw;
+  }
+  .button-mobile {
+    line-height: 16vw;
+  }
+  table .table-header {
+    font-size: 1.2rem;
+    line-height: 4.26666667vw;
+  }
+  table p {
+    font-size: 4rem;
+    line-height: 15.46666667vw;
+  }
+  .auth-container {
+    font-size: 1.8rem;
+    line-height: 8vw;
+  }
+  .auth-container input {
+    font-size: 1.8rem;
+  }
+  .auth-container .button {
+    line-height: 12.30769231vw;
+  }
+  .time-table .text {
+    font-size: 1.4rem;
+    line-height: 4.8vw;
+  }
+  .time-table select {
+    font-size: 1.8rem;
+    line-height: 6.13333333vw;
+  }
+  .time-table .button {
+    line-height: 16vw;
+  }
+}

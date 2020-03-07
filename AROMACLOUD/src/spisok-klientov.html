@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--endbuild-->
+    <title>Список клиентов</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./glavnaya-karta-obektov.html" class="logo-img"><img src="./images/logo.png" alt=""></a>
+        <nav class="header-menu">
+                <ul>
+                    <li><a href="./glavnaya-karta-obektov.html">Главный экран</a></li>
+                    <div class="li">
+                    <li><a href="#">Клиенты</a></li>
+                    <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./spisok-apparatov.html">Аппараты</a></li>
+                    <li class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./kartochka-obekta.html">Добавить объект</a></li>
+                    <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                </ul>
+        </nav>  
+        <div class="burger" data-toggle="modal" data-target="#modal_menu">
+            <div class="strip"></div>
+            <div class="strip"></div>
+            <div class="strip"></div>
+        </div>
+    </header>
+    <div class="journal">Клиенты</div>
+    <div class="desc-4-header">
+        <div class="search-form">
+            <div class="search-img"><img src="./images/search.png" alt=""></div>
+            <input type="text" placeholder="Имя клиента">
+        </div>
+            <div class="header-text">
+            <p>Сортировать:</p>
+            <p class=" opt blue">По названию</p>
+            <p class="opt">По числу аппаратов</p>
+            <p class="opt">По неисправностям</p>
+        </div>
+        <a href="./dobavit-v-spravochnik.html" class="plus-button"><img src="./images/plus-wt.png" alt=""></a>
+    </div>
+    <div class="desc-2-cards-count">
+        Карточек на странице: &nbsp;
+        <span class="cards-counter blue">5</span>&nbsp;
+        <span class="cards-counter">10</span>&nbsp;
+        <span class="cards-counter">15</span>&nbsp;
+        <span class="cards-counter">20</span> 
+    </div>
+    <div class="desc-4-select-mobile">
+        <select name="" id="">
+            <option value="">По названию</option>
+            <option value="">По числу аппаратов</option>
+            <option value="">По неисправностям</option>
+        </select>
+    </div>
+    <div class="desc-4-main">
+        <div class="card first-card">
+                <div class="left-block">
+                        <div class="journal">ИП Иванов</div>
+                        <p class="holding-name">Сеть пекарен Сеть пекарен Сеть пекарен Сеть пекарен Сеть пекарен</p>
+                        <div class="footer">
+                            <p>Неисправных аппаратов</p>
+                            <p class="counter">4</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="center-block">
+                        <div class="first-row">
+                            <div class="journal">Адресов:</div>
+                            <p>62</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="second-row">
+                                <div class="journal">Аппаратов:</div>
+                                <p>58/62</p>
+                                <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="third-row">
+                            <div class="journal">Уровень жидкости:</div>
+                            <div class="colored-circles">
+                                <div class="circle red"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle yellow"></div>
+                                <p class="fr bold">40</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle green"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <div class="journal">Личный кабинет:</div>
+                        <label for="">Логин:<input type="text" id=""></label>
+                        <label for="">Пароль:<input type="text" id=""></label>
+                    </div>
+        </div>
+        <div class="card">
+            <div class="left-block">
+                <div class="journal">ИП Иванов</div>
+                <p class="holding-name">Сеть пекарен Сеть пекарен Сеть пекарен Сеть пекарен Сеть пекарен</p>
+                <div class="footer">
+                    <p>Неисправных аппаратов</p>
+                    <p class="counter">4</p>
+                    <div class="eye"><img src="./images/eye.png" alt=""></div>
+                </div>
+            </div>
+            <div class="center-block">
+                <div class="first-row">
+                    <div class="journal">Адресов:</div>
+                    <p>62</p>
+                    <div class="eye"><img src="./images/eye.png" alt=""></div>
+                </div>
+                <div class="second-row">
+                        <div class="journal">Аппаратов:</div>
+                        <p>58/62</p>
+                        <div class="eye"><img src="./images/eye.png" alt=""></div>
+                </div>
+                <div class="third-row">
+                    <div class="journal">Уровень жидкости:</div>
+                    <div class="colored-circles">
+                        <div class="circle red"></div>
+                        <p class="fr bold">17</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle yellow"></div>
+                        <p class="fr bold">40</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle green"></div>
+                        <p class="fr bold">17</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="journal">Личный кабинет:</div>
+                <label for="">Логин:<input type="text" id=""></label>
+                <label for="">Пароль:<input type="text" id=""></label>
+            </div>
+        </div>
+        <div class="card">
+                <div class="left-block">
+                        <div class="journal">ИП Иванов</div>
+                        <p class="holding-name">Сеть пекарен</p>
+                        <div class="footer">
+                            <p>Неисправных аппаратов</p>
+                            <p class="counter">4</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="center-block">
+                        <div class="first-row">
+                            <div class="journal">Адресов:</div>
+                            <p>62</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="second-row">
+                                <div class="journal">Аппаратов:</div>
+                                <p>58/62</p>
+                                <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="third-row">
+                            <div class="journal">Уровень жидкости:</div>
+                            <div class="colored-circles">
+                                <div class="circle red"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle yellow"></div>
+                                <p class="fr bold">40</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle green"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <div class="journal">Личный кабинет:</div>
+                        <label for="">Логин:<input type="text" id=""></label>
+                        <label for="">Пароль:<input type="text" id=""></label>
+                    </div>
+        </div>
+        <div class="card">
+                <div class="left-block">
+                        <div class="journal">ИП Иванов</div>
+                        <p class="holding-name">Сеть пекарен</p>
+                        <div class="footer">
+                            <p>Неисправных аппаратов</p>
+                            <p class="counter">4</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="center-block">
+                        <div class="first-row">
+                            <div class="journal">Адресов:</div>
+                            <p>62</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="second-row">
+                                <div class="journal">Аппаратов:</div>
+                                <p>58/62</p>
+                                <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="third-row">
+                            <div class="journal">Уровень жидкости:</div>
+                            <div class="colored-circles">
+                                <div class="circle red"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle yellow"></div>
+                                <p class="fr bold">40</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle green"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <div class="journal">Личный кабинет:</div>
+                        <label for="">Логин:<input type="text" id=""></label>
+                        <label for="">Пароль:<input type="text" id=""></label>
+                    </div>
+        </div>
+        <div class="card">
+                <div class="left-block">
+                        <div class="journal">ИП Иванов</div>
+                        <p class="holding-name">Сеть пекарен</p>
+                        <div class="footer">
+                            <p>Неисправных аппаратов</p>
+                            <p class="counter">4</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="center-block">
+                        <div class="first-row">
+                            <div class="journal">Адресов:</div>
+                            <p>62</p>
+                            <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="second-row">
+                                <div class="journal">Аппаратов:</div>
+                                <p>58/62</p>
+                                <div class="eye"><img src="./images/eye.png" alt=""></div>
+                        </div>
+                        <div class="third-row">
+                            <div class="journal">Уровень жидкости:</div>
+                            <div class="colored-circles">
+                                <div class="circle red"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle yellow"></div>
+                                <p class="fr bold">40</p>
+                            </div>
+                            <div class="colored-circles">
+                                <div class="circle green"></div>
+                                <p class="fr bold">17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-block">
+                        <div class="journal">Личный кабинет:</div>
+                        <label for="">Логин:<input type="text" id=""></label>
+                        <label for="">Пароль:<input type="text" id=""></label>
+                    </div>
+        </div>
+    </div>  
+        <nav class="nav-desc">
+                <a href="#" class="back"><img src="./images/arrow-back.png" alt=""></a>
+                <ul class="ul-desc">
+                    <li class="first active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">11</a></li>
+                    <li class="last"><a href="#">12</a></li>
+                </ul>
+                <a href="#" class="forth"><img src="./images/arrow-forth.png" alt=""></a>
+        </nav>
+        <div class="modal fade" id="modal_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                    <nav class="modal-menu">
+                            <ul>
+                                <li><a href="./spisok-klientov.html">Клиенты</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./spisok-apparatov.html">Аппараты</a><div class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./kartochka-obekta.html">Добавить объект</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                                <li class="login"><a href="#">Admin</a><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                            </ul>
+                    </nav>  
+              </div>
+            </div>
+        </div>
+</body>
+</html>

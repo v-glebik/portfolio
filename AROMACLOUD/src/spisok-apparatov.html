@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--endbuild-->
+    <title>Список аппаратов</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./glavnaya-karta-obektov.html" class="logo-img"><img src="./images/logo.png" alt=""></a>
+        <nav class="header-menu">
+                <ul>
+                    <li><a href="./glavnaya-karta-obektov.html">Главный экран</a></li>
+                    <div class="li">
+                    <li><a href="./spisok-klientov.html">Клиенты</a></li>
+                    <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="#">Аппараты</a></li>
+                    <li class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./kartochka-obekta.html">Добавить объект</a></li>
+                    <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                </ul>
+        </nav>  
+        <div class="burger" data-toggle="modal" data-target="#modal_menu">
+            <div class="strip"></div>
+            <div class="strip"></div>
+            <div class="strip"></div>
+        </div>
+    </header>    
+    <div class="journal">Аппараты</div>
+    <div class="desc-5-header">
+        <div class="filters">
+            <div class="button" data-toggle="modal" data-target="#desc_5_filters">Фильтры</div>
+            <div class="plus-button-mobile"><img src="./images/plus-wt.png" alt=""></div>
+        </div>
+        <div class="search-forms">
+            <div class="search-form">
+                <div class="search-img"><img src="./images/search.png" alt=""></div>
+                <input type="text" class="left-input" placeholder="Введите название клиента">
+            </div>
+            <div class="search-form">
+                <div class="search-img"><img src="./images/search.png" alt=""></div>
+                <input type="text" class="right-input" placeholder="Введите № телефона">
+            </div>
+        </div>
+        <p class="left-par">С неисправностями</p>
+        <p class="right-par">С низким уровнем жидкости</p>
+        <div class="plus-button" data-toggle="modal" data-target="#main_popup"><img src="./images/plus-wt.png" alt=""></div>
+    </div>
+    <div class="desc-2-cards-count">
+        Карточек на странице: &nbsp;
+        <span class="cards-counter blue">6</span>&nbsp;
+        <span class="cards-counter">12</span>&nbsp;
+        <span class="cards-counter">24</span>&nbsp;
+        <span class="cards-counter">48</span> 
+    </div>
+    <div class="desc-5-selects">
+        <div>
+            <label for="">Клиент</label>
+            <select name="" id=""></select>
+        </div>
+        <div>
+            <label for="">Город</label>
+            <select name="" id=""></select>
+        </div>
+        <div>
+            <label for="">Адрес</label>
+            <select name="" id=""></select>
+        </div>
+        <div>
+            <label for="">Тип аппарата</label>
+            <select name="" id=""></select>
+        </div>
+        <div>
+            <label for="">Аромат</label>
+            <select name="" id=""></select>
+        </div>
+        <div>
+            <label for="">Уровень жидкости</label>
+            <select name="" id=""></select>
+        </div>
+    </div>
+    <div class="desc-2-main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="left"><p class="norm bold">ИП Иванов</p></div>
+                        <div class="right">
+                            <div class="text">
+                                <p class="norm light"><a href="#">+7 900 000 00 00</a></p>
+                                <p class="timer light">15.12.2019 11:42</p>
+                            </div>
+                            <a href="./kartochka-apparata.html" class=""><div class="pen"><img src="./images/pen.png" alt="" title="Редактировать карточку"></div></a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="cat">Категория: </p>
+                        <p class="name">Кулинария</p>
+                </div>
+                <div class="aromat-apparat">
+                    <div class="aromat">
+                        <p>Аромат: </p>
+                        <p class="bold">Кофе с пирожным</p>
+                    </div>
+                    <div class="apparat">
+                        <p>Аппарат: </p>
+                        <p class="bold">Shop 300</p>
+                    </div>
+                </div>
+                <div class="desc-2-row row--max">
+                    <div class="left">
+                        <p class="rems">Остатки аромата:</p>
+                        <p class="norm"><span class="big-text">8000</span>&nbsp;<span class="days">дней</span></p>
+                    </div>
+                    <p class="min min--mob">За правым стеллажом №3 в разделе алкогольных напитков</p>
+                </div>
+                <div class="desc-2-row row--max row--max--sec">
+                    <div class="left left--sec">
+                        <input class="button btn--white" placeholder="">
+                        <div class="button" data-toggle="modal" data-target="#main_popup">Наполнить</div>
+                    </div>
+                    <div class="right right--sec">
+                        <div class="line">
+                            <p class="min min--sec">На связи</p>
+                            <div class="img">
+                                <img src="./images/telephone.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Компрессор</p>
+                            <div class="img">
+                                <img src="./images/compessor.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Вентилятор</p>
+                            <div class="img">
+                                <img src="./images/ventillator.png" alt="">
+                            </div>
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Таймер</p>
+                            <div class="img">
+                                <img src="./images/timer.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-center">Режимы работы:</div>
+                <div class="card-footer">
+                    <div class="line">
+                        <p class="min min--sec">Аппарат</p>
+                        <div class="img">
+                            <img src="./images/rect.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                    <div class="line">
+                        <p class="min min--sec">Вентилятор</p>
+                        <div class="img">
+                            <img src="./images/ventillator.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="left"><p class="norm bold">ИП Иванов</p></div>
+                        <div class="right">
+                            <div class="text">
+                                <p class="norm light"><a href="#">+7 900 000 00 00</a></p>
+                                <p class="timer light">15.12.2019 11:42</p>
+                            </div>
+                            <a href="./kartochka-apparata.html" class=""><div class="pen"><img src="./images/pen.png" alt="" title="Редактировать карточку"></div></a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="cat">Категория: </p>
+                        <p class="name">Кулинария</p>
+                </div>
+                <div class="aromat-apparat">
+                    <div class="aromat">
+                        <p>Аромат: </p>
+                        <p class="bold">Кофе с пирожным</p>
+                    </div>
+                    <div class="apparat">
+                        <p>Аппарат: </p>
+                        <p class="bold">Shop 300</p>
+                    </div>
+                </div>
+                <div class="desc-2-row row--max">
+                    <div class="left">
+                        <p class="rems">Остатки аромата:</p>
+                        <p class="norm"><span class="big-text">8000</span>&nbsp;<span class="days">дней</span></p>
+                    </div>
+                    <p class="min min--mob">За правым стеллажом №3 в разделе алкогольных напитков</p>
+                </div>
+                <div class="desc-2-row row--max row--max--sec">
+                    <div class="left left--sec">
+                        <input class="button btn--white" placeholder="">
+                        <div class="button" data-toggle="modal" data-target="#main_popup">Наполнить</div>
+                    </div>
+                    <div class="right right--sec">
+                        <div class="line">
+                            <p class="min min--sec">На связи</p>
+                            <div class="img">
+                                <img src="./images/telephone.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Компрессор</p>
+                            <div class="img">
+                                <img src="./images/compessor.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Вентилятор</p>
+                            <div class="img">
+                                <img src="./images/ventillator.png" alt="">
+                            </div>
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Таймер</p>
+                            <div class="img">
+                                <img src="./images/timer.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-center">Режимы работы:</div>
+                <div class="card-footer">
+                    <div class="line">
+                        <p class="min min--sec">Аппарат</p>
+                        <div class="img">
+                            <img src="./images/rect.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                    <div class="line">
+                        <p class="min min--sec">Вентилятор</p>
+                        <div class="img">
+                            <img src="./images/ventillator.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="left"><p class="norm bold">ИП Иванов</p></div>
+                        <div class="right">
+                            <div class="text">
+                                <p class="norm light"><a href="#">+7 900 000 00 00</a></p>
+                                <p class="timer light">15.12.2019 11:42</p>
+                            </div>
+                            <a href="./kartochka-apparata.html" class=""><div class="pen"><img src="./images/pen.png" alt="" title="Редактировать карточку"></div></a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="cat">Категория: </p>
+                        <p class="name">Кулинария</p>
+                </div>
+                <div class="aromat-apparat">
+                    <div class="aromat">
+                        <p>Аромат: </p>
+                        <p class="bold">Кофе с пирожным</p>
+                    </div>
+                    <div class="apparat">
+                        <p>Аппарат: </p>
+                        <p class="bold">Shop 300</p>
+                    </div>
+                </div>
+                <div class="desc-2-row row--max">
+                    <div class="left">
+                        <p class="rems">Остатки аромата:</p>
+                        <p class="norm"><span class="big-text">8000</span>&nbsp;<span class="days">дней</span></p>
+                    </div>
+                    <p class="min min--mob">За правым стеллажом №3 в разделе алкогольных напитков</p>
+                </div>
+                <div class="desc-2-row row--max row--max--sec">
+                    <div class="left left--sec">
+                        <input class="button btn--white" placeholder="">
+                        <div class="button" data-toggle="modal" data-target="#main_popup">Наполнить</div>
+                    </div>
+                    <div class="right right--sec">
+                        <div class="line">
+                            <p class="min min--sec">На связи</p>
+                            <div class="img">
+                                <img src="./images/telephone.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Компрессор</p>
+                            <div class="img">
+                                <img src="./images/compessor.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Вентилятор</p>
+                            <div class="img">
+                                <img src="./images/ventillator.png" alt="">
+                            </div>
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Таймер</p>
+                            <div class="img">
+                                <img src="./images/timer.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-center">Режимы работы:</div>
+                <div class="card-footer">
+                    <div class="line">
+                        <p class="min min--sec">Аппарат</p>
+                        <div class="img">
+                            <img src="./images/rect.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                    <div class="line">
+                        <p class="min min--sec">Вентилятор</p>
+                        <div class="img">
+                            <img src="./images/ventillator.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+                </div>
+                <!--<div class="card">
+                    <div class="card-header">
+                        <div class="left"><p class="norm bold">ИП Иванов</p></div>
+                        <div class="right">
+                            <div class="text">
+                                <p class="norm light"><a href="#">+7 900 000 00 00</a></p>
+                                <p class="timer light">15.12.2019 11:42</p>
+                            </div>
+                            <a href="./kartochka-apparata.html" class=""><div class="pen"><img src="./images/pen.png" alt="" title="Редактировать карточку"></div></a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="cat">Категория: </p>g
+                        <p class="name">Кулинария</p>
+                </div>
+                <div class="aromat-apparat">
+                    <div class="aromat">
+                        <p>Аромат: </p>
+                        <p class="bold">Кофе с пирожным</p>
+                    </div>
+                    <div class="apparat">
+                        <p>Аппарат: </p>
+                        <p class="bold">Shop 300</p>
+                    </div>
+                </div>
+                <div class="desc-2-row row--max">
+                    <div class="left">
+                        <p class="rems">Остатки аромата:</p>
+                        <p class="norm"><span class="big-text">8000</span>&nbsp;<span class="days">дней</span></p>
+                    </div>
+                    <p class="min min--mob">За правым стеллажом №3 в разделе алкогольных напитков</p>
+                </div>
+                <div class="desc-2-row row--max row--max--sec">
+                    <div class="left left--sec">
+                        <input class="button btn--white" placeholder="">
+                        <div class="button" data-toggle="modal" data-target="#main_popup">Наполнить</div>
+                    </div>
+                    <div class="right right--sec">
+                        <div class="line">
+                            <p class="min min--sec">На связи</p>
+                            <div class="img">
+                                <img src="./images/telephone.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Компрессор</p>
+                            <div class="img">
+                                <img src="./images/compessor.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Вентилятор</p>
+                            <div class="img">
+                                <img src="./images/ventillator.png" alt="">
+                            </div>
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Таймер</p>
+                            <div class="img">
+                                <img src="./images/timer.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-center">Режимы работы:</div>
+                <div class="card-footer">
+                    <div class="line">
+                        <p class="min min--sec">Аппарат</p>
+                        <div class="img">
+                            <img src="./images/rect.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                    <div class="line">
+                        <p class="min min--sec">Вентилятор</p>
+                        <div class="img">
+                            <img src="./images/ventillator.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="left"><p class="norm bold">ИП Иванов</p></div>
+                        <div class="right">
+                            <div class="text">
+                                <p class="norm light"><a href="#">+7 900 000 00 00</a></p>
+                                <p class="timer light">15.12.2019 11:42</p>
+                            </div>
+                            <a href="./kartochka-apparata.html" class=""><div class="pen"><img src="./images/pen.png" alt="" title="Редактировать карточку"></div></a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="cat">Категория: </p>
+                        <p class="name">Кулинария</p>
+                </div>
+                <div class="aromat-apparat">
+                    <div class="aromat">
+                        <p>Аромат: </p>
+                        <p class="bold">Кофе с пирожным</p>
+                    </div>
+                    <div class="apparat">
+                        <p>Аппарат: </p>
+                        <p class="bold">Shop 300</p>
+                    </div>
+                </div>
+                <div class="desc-2-row row--max">
+                    <div class="left">
+                        <p class="rems">Остатки аромата:</p>
+                        <p class="norm"><span class="big-text">8000</span>&nbsp;<span class="days">дней</span></p>
+                    </div>
+                    <p class="min min--mob">За правым стеллажом №3 в разделе алкогольных напитков</p>
+                </div>
+                <div class="desc-2-row row--max row--max--sec">
+                    <div class="left left--sec">
+                        <input class="button btn--white" placeholder="">
+                        <div class="button" data-toggle="modal" data-target="#main_popup">Наполнить</div>
+                    </div>
+                    <div class="right right--sec">
+                        <div class="line">
+                            <p class="min min--sec">На связи</p>
+                            <div class="img">
+                                <img src="./images/telephone.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Компрессор</p>
+                            <div class="img">
+                                <img src="./images/compessor.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Вентилятор</p>
+                            <div class="img">
+                                <img src="./images/ventillator.png" alt="">
+                            </div>
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Таймер</p>
+                            <div class="img">
+                                <img src="./images/timer.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-center">Режимы работы:</div>
+                <div class="card-footer">
+                    <div class="line">
+                        <p class="min min--sec">Аппарат</p>
+                        <div class="img">
+                            <img src="./images/rect.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                    <div class="line">
+                        <p class="min min--sec">Вентилятор</p>
+                        <div class="img">
+                            <img src="./images/ventillator.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="left"><p class="norm bold">ИП Иванов</p></div>
+                        <div class="right">
+                            <div class="text">
+                                <p class="norm light"><a href="#">+7 900 000 00 00</a></p>
+                                <p class="timer light">15.12.2019 11:42</p>
+                            </div>
+                            <a href="./kartochka-apparata.html" class=""><div class="pen"><img src="./images/pen.png" alt="" title="Редактировать карточку"></div></a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <p class="cat">Категория: </p>
+                        <p class="name">Кулинария</p>
+                </div>
+                <div class="aromat-apparat">
+                    <div class="aromat">
+                        <p>Аромат: </p>
+                        <p class="bold">Кофе с пирожным</p>
+                    </div>
+                    <div class="apparat">
+                        <p>Аппарат: </p>
+                        <p class="bold">Shop 300</p>
+                    </div>
+                </div>
+                <div class="desc-2-row row--max">
+                    <div class="left">
+                        <p class="rems">Остатки аромата:</p>
+                        <p class="norm"><span class="big-text">8000</span>&nbsp;<span class="days">дней</span></p>
+                    </div>
+                    <p class="min min--mob">За правым стеллажом №3 в разделе алкогольных напитков</p>
+                </div>
+                <div class="desc-2-row row--max row--max--sec">
+                    <div class="left left--sec">
+                        <input class="button btn--white" placeholder="">
+                        <div class="button" data-toggle="modal" data-target="#main_popup">Наполнить</div>
+                    </div>
+                    <div class="right right--sec">
+                        <div class="line">
+                            <p class="min min--sec">На связи</p>
+                            <div class="img">
+                                <img src="./images/telephone.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Компрессор</p>
+                            <div class="img">
+                                <img src="./images/compessor.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Вентилятор</p>
+                            <div class="img">
+                                <img src="./images/ventillator.png" alt="">
+                            </div>
+                            <div class="circle red"></div>
+                        </div>
+                        <div class="line">
+                            <p class="min min--sec">Таймер</p>
+                            <div class="img">
+                                <img src="./images/timer.png" alt="">
+                            </div>
+                            <div class="circle green"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-center">Режимы работы:</div>
+                <div class="card-footer">
+                    <div class="line">
+                        <p class="min min--sec">Аппарат</p>
+                        <div class="img">
+                            <img src="./images/rect.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                    <div class="line">
+                        <p class="min min--sec">Вентилятор</p>
+                        <div class="img">
+                            <img src="./images/ventillator.png" alt="">
+                        </div>
+                        <p class="off full-opacity">off</p>
+                        <div class="tumbler">
+                            <div class="pointer"></div>
+                        </div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+                </div>
+            </div>-->
+        </div>
+        <nav class="nav-desc">
+                <a href="#" class="back"><img src="./images/arrow-back.png" alt=""></a>
+                <ul class="ul-desc">
+                    <li class="first active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">11</a></li>
+                    <li class="last"><a href="#">12</a></li>
+                </ul>
+                <a href="#" class="forth"><img src="./images/arrow-forth.png" alt=""></a>
+        </nav>
+        <div class="modal fade" id="desc_5_filters" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            
+                                    <div class="search-form">
+                                        <div class="search-img"><img src="./images/search.png" alt=""></div>
+                                        <input type="text" class="left-input" placeholder="Введите название клиента">
+                                    </div>
+                                    <div class="search-form">
+                                        <div class="search-img"><img src="./images/search.png" alt=""></div>
+                                        <input type="text" class="right-input" placeholder="Введите ID аппарата">
+                                    </div>
+                                    <label for="">Клиент</label>
+                                    <select name="" id=""></select>
+                                
+                                    <label for="">Город</label>
+                                    <select name="" id=""></select>
+                                
+                                    <label for="">Адрес</label>
+                                    <select name="" id=""></select>
+                                
+                                    <label for="">Тип аппарата</label>
+                                    <select name="" id=""></select>
+                                
+                                    <label for="">Аромат</label>
+                                    <select name="" id=""></select>
+                                
+                                    <label for="">Уровень жидкости</label>
+                                    <select name="" id=""></select>
+                  </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                        <nav class="modal-menu">
+                                <ul>
+                                    <li><a href="./spisok-klientov.html">Клиенты</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                    <li><a href="./spisok-apparatov.html">Аппараты</a><div class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                    <li><a href="./kartochka-obekta.html">Добавить объект</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                    <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                                    <li class="login"><a href="#">Admin</a><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                                </ul>
+                        </nav>  
+                  </div>
+                </div>
+        </div>
+        <div class="modal fade" id="main_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="main-popup">
+                        <p>Подтвердите операцию</p>
+                        <div class="buttons">
+                            <div class="button">Подтвердить</div>
+                            <div class="button">Отмена</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

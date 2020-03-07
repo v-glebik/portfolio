@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./owl-carousel/js/owl.carousel.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="./owl-carousel/css/owl.theme.default.css">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--endbuild-->
+    <title>Добавить аппарат</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./glavnaya-karta-obektov.html" class="logo-img"><img src="./images/logo.png" alt=""></a>
+        <nav class="header-menu">
+                <ul>
+                    <li><a href="./glavnaya-karta-obektov.html">Главный экран</a></li>
+                    <div class="li">
+                    <li><a href="./spisok-klientov.html">Клиенты</a></li>
+                    <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./spisok-apparatov.html">Аппараты</a></li>
+                    <li class="plus"><a href="#"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <div class="li">
+                    <li><a href="./kartochka-obekta.html">Добавить объект</a></li>
+                    <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                    </div>
+                    <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                </ul>
+        </nav>  
+        <div class="burger" data-toggle="modal" data-target="#modal_menu">
+                <div class="strip"></div>
+                <div class="strip"></div>
+                <div class="strip"></div>
+            </div>  
+    </header>
+    <div class="journal">Установить новый аппарат</div>
+    <div class="desc-6-header">
+        <div class="left-block">
+            <div class="first-row">
+                <label for="" class="first-label">Клиент:<select name="" id=""></select></label>
+                <a href="./dobavit-v-spravochnik.html" class="plus"><img src="./images/plus.png" alt=""></a>
+            </div>
+            <div class="second-row">
+                <label for="">Объект:<select name="" id=""></select></label>
+                <a href="./dobavit-v-spravochnik.html" class="plus"><img src="./images/plus.png" alt=""></a>
+            </div>
+            <label for="">Категория<input type="text"></label>
+            <label for="">Местоположение<input type="text"></label>
+        </div>
+        <div class="center-block">
+            <label for="" class="first-label">Марка аппарата<select name="" id=""></select></label>
+            <label for="">Аромат<select name="" id=""></select></label>
+            <label for="">Стартовое наполнение<input type="text" class="mini" placeholder="500 мл"></label>
+            <label for="">№ телефона<input type="text"></label>
+        </div>
+        <div class="right-block">
+            <div class="journal">Включено:</div>
+            <div class="app-vent">
+                <div class="app">
+                    <p class="min">Аппарат</p>
+                    <div class="icon"><img src="./images/rect.png" alt=""></div>
+                    <div class="tumbler">
+                        <div class="pointer"></div>
+                    </div>
+                </div>
+                <div class="vent">
+                    <p class="min">Вентилятор</p>
+                    <div class="icon"><img src="./images/ventillator.png" alt=""></div>
+                    <div class="tumbler">
+                        <div class="pointer"></div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="bottom-hr desc-6-hr">
+    <div class="time-table time-table--app">
+        <div class="text">Расписание</div>
+        <div class="select-button">
+            <select name="" id="">
+                <option value="Выбрать SID">Выбрать SID</option>
+            </select>
+            <div class="button">Скопировать расписание</div>
+        </div>
+    </div>
+    <div class="calendar calendar--desc-6">
+        <div class="calendar-wrapper">
+            <table class="time">
+                <tr class="table-header">
+                    <td class="th-min-mob">Начало интервала</td>
+                </tr>
+                <tr>
+                    <td>00:00</td>
+                </tr>
+                <tr>
+                    <td>00:30</td>
+                </tr>
+                <tr>
+                    <td>01:00</td>
+                </tr>
+                <tr>
+                    <td>01:30</td>
+                </tr>
+                <tr>
+                    <td>02:00</td>
+                </tr>
+                <tr>
+                    <td>02:30</td>
+                </tr>
+                <tr>
+                    <td>03:00</td>
+                </tr>
+                <tr>
+                    <td>03:30</td>
+                </tr>
+                <tr>
+                    <td>04:00</td>
+                </tr>
+                <tr>
+                    <td>04:30</td>
+                </tr>
+                <tr>
+                    <td>05:00</td>
+                </tr>
+                <tr>
+                    <td>05:30</td>
+                </tr>
+                <tr>
+                    <td>06:00</td>
+                </tr>
+                <tr>
+                    <td>06:30</td>
+                </tr>
+                <tr>
+                    <td>07:00</td>
+                </tr>
+                <tr>
+                    <td>07:30</td>
+                </tr>
+                <tr>
+                    <td>08:00</td>
+                </tr>
+                <tr>
+                    <td>08:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">09:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">09:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">10:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">10:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">11:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">11:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">12:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">12:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">13:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">13:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">14:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">14:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">15:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">15:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">16:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">16:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">17:00</td>
+                </tr>
+                <tr>
+                    <td class="blue">17:30</td>
+                </tr>
+                <tr>
+                    <td class="blue">18:00</td>
+                </tr>
+                <tr>
+                    <td>18:30</td>
+                </tr>
+                <tr>
+                    <td>19:00</td>
+                </tr>
+                <tr>
+                    <td>19:30</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>20:30</td>
+                </tr>
+                <tr>
+                    <td>21:00</td>
+                </tr>
+                <tr>
+                    <td>21:30</td>
+                </tr>
+                <tr>
+                    <td>22:00</td>
+                </tr>
+                <tr>
+                    <td>22:30</td>
+                </tr>
+                <tr>
+                    <td>23:00</td>
+                </tr>
+                <tr>
+                    <td>23:30</td>
+                </tr>
+            </table>
+            <div class="carousel-container owl-carousel">
+            <table class="page">
+                <tr class="table-header">
+                    <td class="td-item td-item--bdr">
+                        <div class="week-day">ПН</div>
+                        <div class="footer">
+                            <p>-</p>
+                            <p class="calendar-plus">+</p>
+                            <div class="green-rect">
+                                <div class="white-rects">
+                                    <div class="white-rect one"></div>
+                                    <div class="white-rect two"></div>
+                                </div>
+                            </div>
+                            <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+    
+            <table class="page">
+                    <tr class="table-header">
+                        <td class="td-item td-item--bdr">
+                            <div class="week-day">ВТ</div>
+                            <div class="footer">
+                                <p>-</p>
+                                <p class="calendar-plus">+</p>
+                                <div class="green-rect">
+                                    <div class="white-rects">
+                                        <div class="white-rect one"></div>
+                                        <div class="white-rect two"></div>
+                                    </div>
+                                </div>
+                                <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+    
+                <table class="page">
+                        <tr class="table-header">
+                            <td class="td-item td-item--bdr">
+                                <div class="week-day">СР</div>
+                                <div class="footer">
+                                    <p>-</p>
+                                    <p class="calendar-plus">+</p>
+                                    <div class="green-rect">
+                                        <div class="white-rects">
+                                            <div class="white-rect one"></div>
+                                            <div class="white-rect two"></div>
+                                        </div>
+                                    </div>
+                                    <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                        </tr>
+                    </table>
+                    <table class="page">
+                            <tr class="table-header">
+                                <td class="td-item td-item--bdr">
+                                    <div class="week-day">ЧТ</div>
+                                    <div class="footer">
+                                        <p>-</p>
+                                        <p class="calendar-plus">+</p>
+                                        <div class="green-rect">
+                                            <div class="white-rects">
+                                                <div class="white-rect one"></div>
+                                                <div class="white-rect two"></div>
+                                            </div>
+                                        </div>
+                                        <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                        <table class="page">
+                                <tr class="table-header">
+                                    <td class="td-item td-item--bdr">
+                                        <div class="week-day">ПТ</div>
+                                        <div class="footer">
+                                            <p>-</p>
+                                            <p class="calendar-plus">+</p>
+                                            <div class="green-rect">
+                                                <div class="white-rects">
+                                                    <div class="white-rect one"></div>
+                                                    <div class="white-rect two"></div>
+                                                </div>
+                                            </div>
+                                            <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                            <table class="page">
+                                    <tr class="table-header">
+                                        <td class="td-item td-item--bdr">
+                                            <div class="week-day">СБ</div>
+                                            <div class="footer">
+                                                <p>-</p>
+                                                <p class="calendar-plus">+</p>
+                                                <div class="green-rect">
+                                                    <div class="white-rects">
+                                                        <div class="white-rect one"></div>
+                                                        <div class="white-rect two"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                </table>
+                                <table class="page">
+                                        <tr class="table-header">
+                                            <td class="td-item">
+                                                <div class="week-day">ВС</div>
+                                                <div class="footer">
+                                                    <p>-</p>
+                                                    <p class="calendar-plus">+</p>
+                                                    <div class="green-rect">
+                                                        <div class="white-rects">
+                                                            <div class="white-rect one"></div>
+                                                            <div class="white-rect two"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="red-rect"><img src="./images/х.png" alt=""></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                    </table>
+                </div>
+            </div>
+            <div class="table-bottom"></div>
+        </div>
+    <div class="desc-3-footer">
+        <div class="button desc-3-footer-button" data-toggle="modal" data-target="#main_popup">Обновить данные</div>
+    </div>
+    <div class="modal fade" id="modal_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                    <nav class="modal-menu">
+                            <ul>
+                                <li><a href="./spisok-klientov.html">Клиенты</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./spisok-apparatov.html">Аппараты</a><div class="plus"><a href="./spisok-apparatov.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./kartochka-obekta.html">Добавить объект</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                                <li class="login"><a href="#">Admin</a><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                            </ul>
+                    </nav>  
+              </div>
+            </div>
+    </div>
+    <div class="modal fade" id="main_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="main-popup">
+                        <p>Подтвердите операцию</p>
+                        <div class="buttons">
+                            <div class="button">Подтвердить</div>
+                            <div class="button">Отмена</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

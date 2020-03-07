@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./owl-carousel/js/owl.carousel.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="./owl-carousel/css/owl.theme.default.css">
+    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--endbuild-->
+    <title>Главная | Карта объектов</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo-img"><img src="./images/logo.png" alt=""></a>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="#">Главный экран</a></li>
+                <div class="li">
+                <li><a href="./spisok-klientov.html">Клиенты</a></li>
+                <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                </div>
+                <div class="li">
+                <li><a href="./spisok-apparatov.html">Аппараты</a></li>
+                <li class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></li>
+                </div>
+                <div class="li">
+                <li><a href="./kartochka-obekta.html">Добавить объект</a></li>
+                <li class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></li>
+                </div>
+                <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+            </ul>
+        </nav>  
+        <div class="burger" data-toggle="modal" data-target="#modal_menu">
+            <div class="strip"></div>
+            <div class="strip"></div>
+            <div class="strip"></div>
+        </div>
+    </header>
+    <div class="desc-1-inputs">
+        <form class="left-block">
+            <div class="journal">Карта объектов</div>
+            <div class="search-form">
+                <div class="search-img"><img src="./images/search.png" alt=""></div>
+                <input type="text" placeholder="Введите город">
+            </div>
+            <div class="search-form">
+                <div class="search-img search-img--second"><img src="./images/search.png" alt=""></div>
+                <input type="text" class="second" placeholder="Введите адрес">
+            </div>
+        </form>
+        <div class="right-block">
+            <div class="text">
+                <span class="sort">Сортировать</span>
+                <span class="opt blue">По алфавиту</span>
+                <span class="opt">По количеству аппаратов</span>
+            </div>
+            <div class="selects">
+                <div class="single-select">
+                    <div class="head">Клиент</div>
+                    <select name="" id="">
+                        <option disabled selected>Все</option>
+                    </select>
+                </div>
+                <div class="single-select">
+                    <div class="head">Тип аппарата</div>
+                    <select name="" id="">
+                        <option disabled selected>Все типы</option>
+                    </select>
+                </div>
+                <div class="single-select">
+                    <div class="head">Уровень жидкости</div>
+                    <select name="" id="">
+                        <option disabled selected>Все уровни</option>
+                    </select>
+                </div>
+            </div>
+        </div>   
+    </div> 
+    <div class="filters">
+        <div class="button" data-toggle="modal" data-target="#filters">Фильтры</div>
+        <select name="" id="">
+            <option value="">По алфавиту</option>
+            <option value="">По количеству аппаратов</option>
+        </select>
+    </div>
+    <div class="desc-1-main owl-carousel owl-carousel--map">
+        <div class="cards">
+            <div class="cards-count">
+                    Карточек на странице: 
+                    <span class="cards-counter blue">5</span> 
+                    <span class="cards-counter">10</span>
+                    <span class="cards-counter">15</span> 
+                    <span class="cards-counter">20</span> 
+            </div>
+            <div class="card">
+                <a href="./kartochka-obekta.html" class="eye"><img src="./images/eye.png" alt=""></a>
+                <p><span class="bold">Объект:</span> Лента ТК2</p>
+                <p>Санкт-Петербург, ул. Савушкина, 112</p>
+                <p class="card-text-min">Гипермаркет</p>
+                <div class="card-footer">
+                    <div class="black-rect">
+                        <div class="white-rect"></div>
+                    </div>
+                    <div class="fr"><span class="bold">10</span>/13</div>
+                    <div class="colored-circles">
+                        <div class="circle red"></div>
+                        <p class="fr bold">0</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle yellow"></div>
+                        <p class="fr bold">2</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle green"></div>
+                        <p class="fr bold">8</p>
+                    </div>
+                </div>   
+                
+            </div>
+            <div class="card">
+                <a href="./kartochka-obekta.html" class="eye"><img src="./images/eye.png" alt=""></a>
+                <p><span class="bold">Объект:</span> Лента ТК2</p>
+                <p>Санкт-Петербург, ул. Савушкина, 112</p>
+                <p class="card-text-min">Гипермаркет</p>
+                <div class="card-footer">
+                    <div class="black-rect">
+                        <div class="white-rect"></div>
+                    </div>
+                    <div class="fr"><span class="bold">10</span>/13</div>
+                    <div class="colored-circles">
+                        <div class="circle red"></div>
+                        <p class="fr bold">0</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle yellow"></div>
+                        <p class="fr bold">2</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle green"></div>
+                        <p class="fr bold">8</p>
+                    </div>
+                </div>   
+            </div>
+            <!---<div class="card">
+                <a href="./kartochka-obekta.html" class="eye"><img src="./images/eye.png" alt=""></a>
+                <p><span class="bold">Объект:</span> Лента ТК2</p>
+                <p>Санкт-Петербург, ул. Савушкина, 112</p>
+                <p class="card-text-min">Гипермаркет</p>
+                <div class="card-footer">
+                    <div class="black-rect">
+                        <div class="white-rect"></div>
+                    </div>
+                    <div class="fr"><span class="bold">10</span>/13</div>
+                    <div class="colored-circles">
+                        <div class="circle red"></div>
+                        <p class="fr bold">0</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle yellow"></div>
+                        <p class="fr bold">2</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle green"></div>
+                        <p class="fr bold">8</p>
+                    </div>
+                </div>   
+            </div>
+            <div class="card">
+                <a href="./kartochka-obekta.html" class="eye"><img src="./images/eye.png" alt=""></a>
+                <p><span class="bold">Объект:</span> Лента ТК2</p>
+                <p>Санкт-Петербург, ул. Савушкина, 112</p>
+                <p class="card-text-min">Гипермаркет</p>
+                <div class="card-footer">
+                    <div class="black-rect">
+                        <div class="white-rect"></div>
+                    </div>
+                    <div class="fr"><span class="bold">10</span>/13</div>
+                    <div class="colored-circles">
+                        <div class="circle red"></div>
+                        <p class="fr bold">0</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle yellow"></div>
+                        <p class="fr bold">2</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle green"></div>
+                        <p class="fr bold">8</p>
+                    </div>
+                </div>   
+                
+            </div>
+            <div class="card">
+                <a href="./kartochka-obekta.html" class="eye"><img src="./images/eye.png" alt=""></a>
+                <p><span class="bold">Объект:</span> Лента ТК2</p>
+                <p>Санкт-Петербург, ул. Савушкина, 112</p>
+                <p class="card-text-min">Гипермаркет</p>
+                <div class="card-footer">
+                    <div class="black-rect">
+                        <div class="white-rect"></div>
+                    </div>
+                    <div class="fr"><span class="bold">10</span>/13</div>
+                    <div class="colored-circles">
+                        <div class="circle red"></div>
+                        <p class="fr bold">0</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle yellow"></div>
+                        <p class="fr bold">2</p>
+                    </div>
+                    <div class="colored-circles">
+                        <div class="circle green"></div>
+                        <p class="fr bold">8</p>
+                    </div>
+                </div>   
+            </div>-->
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.7750095314793!2d30.237398016138414!3d59.98564138189336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963699538429f7%3A0xca5f6ad0bbaedcb6!2sUlitsa%20Savushkina%2C%20Sankt-Peterburg!5e0!3m2!1sen!2sru!4v1574930403046!5m2!1sen!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <nav class="nav-desc">
+        <a href="#" class="back"><img src="./images/arrow-back.png" alt=""></a>
+        <ul class="ul-desc">
+            <li class="first active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li class="last"><a href="#">12</a></li>
+        </ul>
+        <a href="#" class="forth"><img src="./images/arrow-forth.png" alt=""></a>
+    </nav>
+        <div class="modal fade" id="filters" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form class="modal-form">
+                            <div class="search-form">
+                                <div class="search-img"><img src="./images/search.png" alt=""></div>
+                                <input type="text" placeholder="Введите город">
+                            </div>
+                            <div class="search-form">
+                                <div class="search-img search-img--second"><img src="./images/search.png" alt=""></div>
+                                <input type="text" class="second" placeholder="Введите адрес">
+                            </div>
+                        </form>
+                        <label for="">Клиент</label>
+                        <select name="" id="">
+                            <option disabled selected>Все</option>
+                        </select>
+                        <label for="">Тип аппарата</label>
+                        <select name="" id="">
+                            <option disabled selected>Все типы</option>
+                        </select>
+                        <label for="">Уровень жидкости</label>
+                        <select name="" id="">
+                            <option disabled selected>Все уровни</option>
+                        </select>
+                  </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal_menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                        <nav class="modal-menu">
+                                <ul>
+                                    <li><a href="./spisok-klientov.html">Клиенты</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                    <li><a href="./spisok-apparatov.html">Аппараты</a><div class="plus"><a href="./dobavit-apparat.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                    <li><a href="./kartochka-obekta.html">Добавить объект</a><div class="plus"><a href="./dobavit-v-spravochnik.html"><img src="./images/plus.png" alt=""></a></div></li>
+                                    <li><a href="./zhurnaly-operatsij.html">Журналы</a></li>
+                                    <li class="login"><a href="#">Admin</a><div class="log-in"><img src="./images/arrow.png" class="arrow" alt=""><img src="./images/frame.png" alt=""></div></li>
+                                </ul>
+                        </nav>  
+                  </div>
+                </div>
+        </div>
+</body>
+</html>
