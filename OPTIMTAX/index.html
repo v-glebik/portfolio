@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платить меньше по налогам?</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/form.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <section class="main-screen">
+        <div class="container">
+            <header class="header">
+                <div class="header__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <div class="header__service">
+                    <div class="header__tel"><a href="tel:+7-926-630-59-97"><div class="header__tel-img"><img src="./assets/images/tel-white.png" alt=""></div><div class="header__tel-text">+7 926 630 59 97</div></a></div>
+                    <div class="header__mail"><a href="mailto:optimtax@yandex.ru"><div class="header__mail-img"><img src="./assets/images/mail-white.png" alt=""></div><div class="header__mail-text">optimtax@yandex.ru</div></a></div>
+                </div>
+            </header>
+        </div>
+        <div class="container">
+            <div class="main">
+                <div class="main__title">
+                    <h1>Платить меньше по налогам?</h1>
+                    <div class="main__subtitle">Мы поможем!</div>    
+                </div>
+                <ul class="main__list">
+                    <li>- Сэкономим на налогах</li>
+                    <li>- Заплатим за вас налоги</li>
+                    <li>- Снизим платежи по НДС</li>
+                </ul>
+                <p class="main__text">Работаем от 1 млн. руб.</p>
+                <p class="main__text main__text--min">Закажите бесплатную консультацию и мы перезвоним в течении 15 мин!</p>
+                <div class="big-button main__big-button" data-toggle="modal" data-target="#modalScreen1">Получить консультацию</div>
+            </div>
+        </div>
+    </section>
+    <section class="gains">
+        <div class="container">
+            <h2>Наши приемущества!</h2>
+            <div class="gains__items row">
+                <div class="gains__item col-12 col-sm-6 col-md-4">
+                    <div class="gains__img"><img src="./assets/images/icon-1.png" alt=""></div>
+                    <h3>100% легально!</h3>
+                    <div class="text gains__text">Работаем исключительно в рамках действующего законодательства РФ с учетом главы 21 Налогового Кодекса РФ.</div>
+                </div>
+                <div class="gains__item col-12 col-sm-6 col-md-4">
+                    <div class="gains__img"><img src="./assets/images/icon-2.png" alt=""></div>
+                    <h3>Гарантия результата!</h3>
+                    <div class="text gains__text">В работе задействованы действующие компании без долгов с хорошей репутацией. Более 100 компаний партнеров.</div>
+                </div>
+                <div class="gains__item col-12 col-sm-6 col-md-4">
+                    <div class="gains__img"><img src="./assets/images/icon-3.png" alt=""></div>
+                    <h3>Без предоплаты!</h3>
+                    <div class="text gains__text">Оплата осуществляется по факту после получения положительного протокола о приёме декларации из налоговой инспекции</div>
+                </div>
+                <div class="gains__item col-12 col-sm-6 col-md-4">
+                    <div class="gains__img"><img src="./assets/images/icon-4.png" alt=""></div>
+                    <h3>Снизим НДС!</h3>
+                    <div class="text gains__text">Легально снизим налоги с гарантией того, что у налоговой службы не возникнет никаких нареканий на деятельность Вашей фирмы</div>
+                </div>
+                <div class="gains__item col-12 col-sm-6 col-md-4">
+                    <div class="gains__img"><img src="./assets/images/icon-5.png" alt=""></div>
+                    <h3>Сэкономим на налогах!</h3>
+                    <div class="text gains__text">Предложим оптимальную схему оптимизации налогов, отталкиваясь от специфики Вашей деятельности.</div>
+                </div>
+                <div class="gains__item col-12 col-sm-6 col-md-4">
+                    <div class="gains__img"><img src="./assets/images/icon-6.png" alt=""></div>
+                    <h3>Уникальное предложение!</h3>
+                    <div class="text gains__text">Заплатим налоги за третьих лиц!</div>
+                </div>
+            </div>
+            <div class="gains__buttons">
+                <div class="gains__button" data-toggle="modal" data-target="#modalScreen2">Получить консультацию</div>
+                <div class="gains__button" data-toggle="modal" data-target="#modalScreen2">Получить консультацию</div>
+                <div class="gains__button" data-toggle="modal" data-target="#modalScreen2">Получить консультацию</div>
+            </div>
+        </div>
+    </section>
+    <div class="strip-1">
+        <div class="container">
+            <div class="strip-1__text">У ФНС НЕ БУДЕТ ПОВОДА ДЛЯ КАМЕРАЛЬНОЙ ИЛИ ВЫЕЗДНОЙ ПРОВЕРКИ! РАБОТАЕМ СО ВСЕМИ РЕГИОНАМИ РФ</div>
+        </div>
+    </div>
+    <section class="scheme">
+        <div class="container">
+            <h2>Схема работы с нами!</h2>
+            <div class="scheme__items row">
+                <div class="scheme__item col-12 col-sm-6 col-lg-3">
+                    <div class="scheme__img"><img src="./assets/images/icon-7.png" alt=""></div>
+                    <p class="text scheme__text">Получаем от Вас заявку, связываемся с Вами и получаем от Вас всю необходимую информацию.</p>
+                </div>
+                <div class="scheme__item col-12 col-sm-6 col-lg-3">
+                    <div class="scheme__img"><img src="./assets/images/icon-8.png" alt=""></div>
+                    <p class="text scheme__text">Подготавливаем документы, отправляем Вам на согласование.</p>
+                </div>
+                <div class="scheme__item col-12 col-sm-6 col-lg-3">
+                <div class="scheme__img"><img src="./assets/images/icon-9.png" alt=""></div>
+                    <p class="text scheme__text">Сдаем отчеты в ФНС и высылаем Вам документы о принятии отчетности.</p>
+                </div>
+                <div class="scheme__item col-12 col-sm-6 col-lg-3">
+                    <div class="scheme__img"><img src="./assets/images/icon-10.png" alt=""></div>
+                    <p class="text scheme__text">Сдаем работу, Вы принимаете и оплачиваете, заранее оговоренную и прописанную в договоре, сумму.</p>
+                </div>
+            </div>
+            <article class="scheme__article">
+                <h2>В связи с коронавирусом:</h2>
+                <div class="scheme__photo"><img src="./assets/images/covd19.png" alt=""></div>
+                <p class="text">Власти предоставили отсрочку по страховым взносам с марта на 3 месяца, а также Федеральная налоговая служба может приостановить все меры контроля из-за коронавируса.</p>
+                <p class="text">Обсуждается отмена выездных проверок, выемок документов, осмотров. В этих случаях налоговым инспекторам приходится лично общаться с налогоплательщиками, и возможно распространение вируса среди сотрудников налоговой службы.</p><br>
+                <p class="text">Бизнесу такая ситуация выгодна: можно выиграть драгоценное время без проверок и запастить НДС на будущее без последствий.</p><br>
+                <p class="text">Итак, согласно законодательству налогоплательщик имеет право воспользоваться вычетом по НДС в течение 3 лет с момента принятия на учёт товаров и услуг. А камеральная налоговая проверка по НДС идет 2 месяца с момента сдачи декларации.</p><br>
+                <p class="text">Это означает, что в это смутное время, мы сможем снизить вам НДС не только текущего периода, но и НДС будущих периодов. Т.е. выдадим вам счетов-фактур в 1 квартал 2020 года больше чем вам нужно закрыть в 1 квартале 2020г, пройдем камеральную проверку за 2 месяца, а вы в свою очередь распределите свои вычеты по НДС до 1 квартала 2023 года.</p><br>
+                <p class="text">Для этого, вам необходимо примерно просчитать сколько НДС вам потребуется на будущее и запастись НДС, вместо гречки и туалетной бумаги).</p>
+            </article>
+            <div class="scheme__conclusion">Надеемся наши советы принесут вам существенную экономию и прибыль!</div>
+            <div class="big-button scheme__big-button" data-toggle="modal" data-target="#modalScreen3">Получить консультацию</div>
+        </div>
+    </section>
+    <div class="strip-2">
+        <div class="container strip-2__container">
+            <div class="strip-2__text">
+                <p>Работаем на результат!</p>
+                <p class="strip-2__mobile-text">С перспективой на долгосрочное сотрудничество.</p>
+            </div>
+        </div>
+    </div>
+    <div class="final-screen">
+        <div class="container">
+            <div class="final-screen__block">
+                <div class="final-screen__text">
+                    <p class="final-screen__upper-p">Возникли вопросы?</p>
+                    <p class="final-screen__down-p">Оставьте заявку и мы перезвоним вам в течении 15 минут!</p>
+                </div>
+                <form class="final-screen__form">
+                    <input type="text" name="name" placeholder="Ваше имя" pattern="[А-Яа-яЁё]+">
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                    <button class="final-screen__submit" type="submit">Заказать консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <div class="footer__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <div class="footer__tel"><a href="tel:+7-926-630-59-97"><div class="footer__tel-img"><img src="./assets/images/tel-black.png" alt=""></div><div class="footer__tel-text">+7 926 630 59 97</div></a></div>
+                <div class="footer__mail"><a href="mailto:optimtax@yandex.ru"><div class="footer__mail-img"><img src="./assets/images/mail-black.jpg" alt=""></div><div class="footer__mail-text">optimtax@yandex.ru</div></a></div>
+            </div>
+            <div class="footer__center"><p>Оптимизация НДС</p></div>
+            <div class="footer__right"><p>Все данные защищены</p></div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="modalScreen1" tabindex="-1" role="dialog" aria-labelledby="modalScreen1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="ms1" class="modal-screen">
+                    <div class="container">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">На главную</button>
+                        <h2 class="modal-screen__h2">Оптимизация НДС в 2020 году.</h2>
+                        <p class="modal-screen__text">В связи с повышением ставки НДС до 20% в 2019 году, многие предприниматели вынуждены искать новые пути для оптимизации НДС. Предвидя данные действия, налоговая автоматизировала и ужесточила контроль. Также планируется увеличение выездных налоговых и камеральных проверок при любом несоответствии в отчетной документации.</p>
+                        <p class="modal-screen__green-text modal-screen__green-text--min">Поэтому самостоятельно оптимизировать НДС — крайне сложная задача.</p>
+                        <p class="modal-screen__text">Предоставляем услуги в сфере бухгалтерского учёта, а именно снижения налоговой базы в рамках налогового кодекса РФ. В нашей команде работают исключительно опытные специалисты, имеющие соответствующее профильное образование. У нас вы можете заказать услугу по уменьшению налоговых платежей по НДС, оптимизации, подтверждению и списанию налоговых расходов законно. Благодаря проведению такого рода услуг, мы сделаем ваш бизнес более прибыльным. Вовремя обратившись к нам, вы разрешите все вопросы, и мы поможем оптимально сформировать налоговые декларации по ндс за отчетный период в требуемом размере. Наша компания в полной мере предоставляет подтверждающую отчетность о принятии и вводе сведений ФНС. Положитесь на профессионалов.</p>
+                        <p class="modal-screen__green-text">Выполняем работу быстро, качественно и своевременно!</p>
+                        <div class="big-button modal-screen__big-button modal-screen__big-button--top" data-toggle="modal" data-target="#modalForm">Получить консультацию</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalScreen2" tabindex="-1" role="dialog" aria-labelledby="modalScreen2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="ms2" class="modal-screen">
+                    <div class="container">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">На главную</button>
+                        <h2 class="modal-screen__h2">Сэкономим вам на ваших налогах!</h2>
+                        <p class="modal-screen__text modal-screen__text--top">Многие владельцы компаний могут платить меньше налогов, но не делают этого: подводит незнание Налогового кодекса и тонкостей финансового планирования. Объясняем на, как малым предприятиям оптимизировать налоговую нагрузку и получать больше прибыли!</p><br>
+                        <p class="modal-screen__text">Грамотный подход уже на этапе организации бизнеса и сравнительные расчеты при выборе системы налогообложения помогут вам сэкономить. В первую очередь нужно проанализировать несколько факторов: вид деятельности, количество сотрудников, регион расположения, планируемые расходы и имущество, которое будет использоваться для дела. Исходя из этого, нужно выбирать систему налогообложения.</p><br>
+                        <p class="modal-screen__text">Наши специалисты, имея богатый опыт и соответствующие знания, постоянно анализируют схемы по уменьшению НДС с точки зрения законодательства и судебной практики. Мы гарантируем, что после нашей работы, Вы сможете спокойно, а главное более продуктивно вести бизнес.</p>
+                        <p class="modal-screen__green-text">Уменьшите расходы в своем бизнесе – это Ваше законное право!</p>
+                        <div class="big-button modal-screen__big-button modal-screen__big-button--middle" data-toggle="modal" data-target="#modalForm">Получить консультацию</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalScreen3" tabindex="-1" role="dialog" aria-labelledby="modalScreen3" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="ms3" class="modal-screen">
+                    <div class="container">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">На главную</button>
+                        <h2 class="modal-screen__h2">Мы заплатим за вас налоги!</h2>
+                        <p class="modal-screen__text modal-screen__text--top">Организации получили возможность уплатить налог, сбор или пошлину за плательщика, т.е. за лицо, на которое законодательством возложена обязанность вносить указанные платежи в бюджет. При этом требовать зачета или возврата из бюджета уплаченной за плательщика суммы нельзя.</p><br>
+                        <p class="modal-screen__text">Данный механизм уплаты платежей в бюджет может пригодиться, к примеру, когда организация не хочет, чтобы к ее счетам пришли требования налоговой. Ведь это зачастую осложняет работу с имеющимися финансами предприятия. В такой ситуации по договоренности с кредитором можно перечислить средства в счет уплаты налогов своего контрагента.</p><br>
+                        <p class="modal-screen__text">При этом нужно, чтобы налоговый орган определил, что организация исполняет не свои обязательства по уплате налогов, а обязательства другого лица. Для этого в платежном поручении делается соответствующее указание. Так, в поле «УНП третьего лица» проставляется УНП плательщика, за которого организация уплачивает налог, а в поле «Назначение платежа» указывается его наименование.</p>
+                        <div class="big-button modal-screen__big-button modal-screen__big-button--bottom" data-toggle="modal" data-target="#modalForm">Получить консультацию</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalForm" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modalForm" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="form">
+                    <div class="form__text">Оставьте номер телефона <br>для получения <br>бесплатной консультации <br>и мы вам перезвоним <br>в течении 15 минут.</div>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                    <button class="form__submit" type="submit">Перезвоните мне</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal -->
+  <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="modalSuccess" 
+  aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-body text-center">
+                 <h3 class="mt-4 mb-5 modal-title">Спасибо за вашу заявку</h3>
+                 <div class="mb-4">
+                     <p class="date"></p>
+                     <p>Наш менеджер свяжется с вами<br>в самое ближайшее время.</p>
+                 </div>
+                 <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                 data-dismiss="modal">Ок</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Modal -->
+ <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalError" 
+ aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h3 class="mt-4 mb-5 modal-title">Извините, с отправкой письма <span>произошла ошибка</span>.<br>Попробуйте еще раз</h3>
+                <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                 data-dismiss="modal">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

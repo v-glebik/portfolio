@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimconsult24</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/form.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <section class="main-screen">
+        <div class="container">
+            <header class="header">
+                <div class="header__logo"><img src="./assets/images/logo.png" alt=""></div>
+                <div class="header__service">
+                    <div class="header__tel"><a href="tel:+7-926-630-59-97"><div class="header__tel-img"><img src="./assets/images/phone-white.png" alt=""></div><div class="header__tel-text">+7 926 630 59 97</div></a></div>
+                    <div class="header__mail"><a href="mailto:optimconsult24@yandex.ru"><div class="header__mail-img"><img src="./assets/images/mail-white.png" alt=""></div><div class="header__mail-text">optimconsult24@yandex.ru</div></a></div>
+                </div>
+            </header>
+            <div class="main">
+                <div class="main__title">
+                    <h1>Ваш счет заблокирован?</h1>
+                    <p>Выясним и устраним причины блокировки расчетного счета с любым <span>БАНКОМ!</span> Снимем арест за <span>3 дня</span>, если нет нарушений налогового кодекса РФ.</p>
+                </div>
+                <form class="form">
+                    <div class="form__text">Оставьте номер телефона <br>для получения <br>бесплатной консультации <br>и мы вам перезвоним <br>в течении 15 минут.</div>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                    <button class="form__submit" type="submit">Перезвоните мне</button>
+                </form>
+                <div class="main__subtitle">Разблокируем на любой стадии!</div>
+            </div>
+        </div>
+    </section>
+    <section class="second-screen">
+        <div class="container">
+            <div class="block-1">
+                <div class="block-1__item">
+                    <h3>Заблокировали банк клиент?</h3>
+                    <div class="block-1__img"><img src="./assets/images/icon-1.jpg" alt=""></div>
+                    <p class="text">Банк приостановил онлайн обслуживание (ДБО) вашего счета и запросил у вас документы?</p>
+                </div>
+                <div class="block-1__item">
+                    <h3>Заблокировали счет?</h3>
+                    <div class="block-1__img"><img src="./assets/images/icon-2.jpg" alt=""></div>
+                    <p class="text">Вы получили официальное уведомление, банк заблокировал счет и вы не можете совершать операции?</p>
+                </div>
+                <div class="block-1__item">
+                    <h3>Попали в черный список?</h3>
+                    <div class="block-1__img"><img src="./assets/images/icon-3.jpg" alt=""></div>
+                    <p class="text">Предоставленные документы не прошли проверку и вы оказались в черном списке?</p>
+                </div>
+            </div>
+            <div class="second-screen__buttons">
+                <button class="second-screen__button second-screen__button--mobile-none" data-toggle="modal" data-target="#modalForm">Получить консультацию</button>
+                <button class="second-screen__button second-screen__button--mobile-none"  data-toggle="modal" data-target="#modalForm">Получить консультацию</button>
+                <button class="second-screen__button" data-toggle="modal" data-target="#modalForm">Получить консультацию</button>
+            </div>
+            <div class="block-2">
+                <h2>Блокировка расчетного счета парализует работу, ведет к простоям и убыткам. Становится невозможным:</h2>
+                <div class="block-2__items">
+                    <div class="block-2__item">
+                        <div class="block-2__img"><img src="./assets/images/image-1.jpg" alt=""></div>
+                        <p class="text">Выполнять договорные обязательства и рассчитываться с контрагентами</p>
+                    </div>
+                    <div class="block-2__item">
+                        <div class="block-2__img"><img src="./assets/images/image-2.png" alt=""></div>
+                        <p class="text">Снимать деньги со счета</p>
+                    </div>
+                    <div class="block-2__item">
+                        <div class="block-2__img"><img src="./assets/images/image-3.jpg" alt=""></div>
+                        <p class="text">Открывать новые счета даже в других банках</p>
+                    </div>
+                </div>
+                <div class="second-screen__single-button">
+                    <button class="second-screen__button" data-toggle="modal" data-target="#modalForm">Получить консультацию</button>
+                </div>
+            </div>
+            <div class="block-3">
+                <h2>По закону заблокировать расчетный счет компании или предпринимателя могут, если:</h2>
+                <div class="block-3__row block-3__row--arrow">
+                    <div class="arrow-img"><img src="./assets/images/arrow.png" alt=""></div>
+                    <p class="text text--red">Есть задолженность по налогам, штрафам, пеням.</p>
+                </div>
+                <div class="block-3__row">
+                    <div class="empty-block"></div>
+                    <p class="text">Арест накладывается только на сумму долга.</p>
+                </div>
+                <div class="block-3__row block-3__row--arrow">
+                    <div class="arrow-img"><img src="./assets/images/arrow.png" alt=""></div>
+                    <p class="text text--red">Не сдана налоговая декларация или расчет 6-НДФЛ.</p>
+                </div>
+                <div class="block-3__row">
+                    <div class="empty-block"></div>
+                    <p class="text">Блокируются все средства, имеющиеся на счете.</p>
+                </div>
+                <div class="block-3__row block-3__row--arrow">
+                    <div class="arrow-img"><img src="./assets/images/arrow.png" alt=""></div>
+                    <p class="text text--red">Не соблюдены правила электронного документооборота с ИФНС.</p>
+                </div>
+                <div class="block-3__row">
+                    <div class="empty-block"></div>
+                    <p class="text">Предприятия и ИП, которые сдают отчетность в электронном виде, обязаны подтверждать прием документов, которые им отправляет налоговая. Если этого не делать, инспекция блокирует счет.</p>
+                </div>
+                <div class="block-3__row block-3__row--arrow">
+                    <div class="arrow-img"><img src="./assets/images/arrow.png" alt=""></div>
+                    <p class="text text--red">Есть решение суда.</p>
+                </div>
+                <div class="block-3__row">
+                    <div class="empty-block"></div>
+                    <p class="text">В суд о взыскании задолженности может обратиться контрагент, банк или госорган.</p>
+                </div>
+                <div class="block-3__row block-3__row--arrow">
+                    <div class="arrow-img"><img src="./assets/images/arrow.png" alt=""></div>
+                    <p class="text text--red text--long">По результатам налоговой проверки начислены налоги, пени и штрафы.</p>
+                </div>
+                <div class="block-3__row">
+                    <div class="empty-block"></div>
+                    <p class="text text--long">ИФНС может в качестве обеспечительных мер приостановить операции по счету, если есть основания подозревать, что без этого будет невозможно взыскать долг.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="final-screen">
+        <div class="container">
+            <div class="final-screen__block">
+                <div class="final-screen__text">Вместе с решением проблемы: мы разрабатываем для клиента рекомендации по работе с целью предотвращения <span>повторных блокировок.</span></div>
+                <form class="final-screen__form">
+                    <input type="text" name="name" placeholder="Ваше имя" pattern="[А-Яа-яЁё]+">
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                    <button class="final-screen__submit" type="submit">Заказать консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__left">
+                    <div class="footer__logo"><img src="./assets/images/logo-footer.png" alt=""></div>
+                    <div class="footer__service">
+                        <div class="footer__tel"><a href="tel:+7-926-630-59-97"><div class="footer__tel-img"><img src="./assets/images/phone-black.png" alt=""></div><div class="footer__tel-text">+7 926 630 59 97</div></a></div>
+                        <div class="footer__mail"><a href="mailto:optimconsult24@yandex.ru"><div class="footer__mail-img"><img src="./assets/images/mail-black.png" alt=""></div><div class="footer__mail-text">optimconsult24@yandex.ru</div></a></div>
+                    </div>
+                </div>
+                <div class="footer__center">Разблокировка счетов юридических лиц по 115 ФЗ</div>
+                <div class="footer__right">Все данные защищены</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalForm" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="form">
+                <div class="form__text">Оставьте номер телефона <br>для получения <br>бесплатной консультации <br>и мы вам перезвоним <br>в течении 15 минут.</div>
+                <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                <button class="form__submit" type="submit">Перезвоните мне</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="modalSuccess" 
+  aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-body text-center">
+                 <h3 class="mt-4 mb-5 modal-title">Спасибо за вашу заявку</h3>
+
+                 <div class="mb-4">
+                     <p class="date"></p>
+                     <p>Наш менеджер свяжется с вами<br>в самое ближайшее время.</p>
+                 </div>
+                 <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                 data-dismiss="modal">Ок</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Modal -->
+ <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalError" 
+ aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h3 class="mt-4 mb-5 modal-title">Извините, с отправкой письма <span>произошла ошибка</span>.<br>Попробуйте еще раз</h3>
+                <button type="submit" value="ok" class="btn btn-danger btn-round mb-5" 
+                 data-dismiss="modal">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

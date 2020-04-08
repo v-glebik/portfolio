@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form class="form">
+        <div class="form__text">Оставьте номер телефона <br>для получения <br>бесплатной консультации <br>и мы вам перезвоним <br>в течении 15 минут.</div>
+        <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+        <button class="form__submit" type="submit">Перезвоните мне</button>
+    </form>
+
+    <div class="final-screen">
+        <div class="container">
+            <div class="final-screen__block">
+                <div class="final-screen__text">Вместе с решением проблемы: мы разрабатываем для клиента рекомендации по работе с целью предотвращения <span>повторных блокировок.</span></div>
+                <form class="final-screen__form">
+                    <input type="text" name="name" placeholder="Ваше имя" pattern="[А-Яа-яЁё]+">
+                    <input type="tel" name="phone" placeholder="Номер телефона" required>
+                    <button class="final-screen__submit" type="submit">Заказать консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
