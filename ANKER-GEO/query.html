@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запрос</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container header__container--top">
+            <div class="header__logo"><a href="#"><img src="./assets/images/logo.png" alt=""></a></div>
+            <div class="header__search"><input type="text" placeholder="Поиск"><div class="header__search-img"><img src="./assets/images/search.png" alt=""></div></div>
+            <div class="header__phone"><a href="tel:+7-812-677-41-00"><div class="header__phone-img"><img src="./assets/images/phone.png" alt=""></div>+7 812 677 41 00</a></div>
+            <div class="header__mail"><a href="mailto:mail@anker-pk.ru"><div class="header__mail-img"><img src="./assets/images/email.png" alt=""></div>   mail@anker-pk.ru</a></div>
+            <div class="header__mobile-cart"><a href="#"><img src="./assets/images/cart.png" alt=""></a></div>
+            <div class="burger">
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+            </div>
+            <div class="header__language"><a href="">RU</a> / <a href="">EN</a></div>
+        </div>
+        <div class="header__bottom">
+            <div class="container header__container header__container--bottom">
+                <nav>
+                    <ul class="header__menu">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Компания</a></li>
+                        <li><a href="">Запрос</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Партнёры</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart"><a href="">Корзина</a></div>
+                <div class="header__language-mobile"><a href="">RU</a> / <a href="">EN</a></div>
+            </div>
+            <div class="header__logo-mobile"><img src="./assets/images/logo-footer.png" alt=""></div>
+        </div>
+    </header>
+    <div class="query">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="">Главная</a> / <a href="" class="active">Запрос</a>
+            </div>
+            <p>Не нашли на нашем сайте необходимые буровые установки, материалы или комплектующие интересующих Вас брендов? Заполните форму электронного запроса ниже, и менеджер <span>«ПК Анкер Гео»</span> свяжется с Вами в самое ближайшее время для предоставления нужной информации.</p>
+            <p><span>«ПК Анкер Гео»</span> сотрудничает с лидирующими на мировом рынке производителями спецтехники. Наш обширный каталог включает новейшие буровые машины от лучших европейских брендов и все необходимое для строительства и проведения геоинженерных изысканий. Для всех заказчиков доступна бесплатная помощь специалиста в подборе техники и инструмента.</p>
+            <form action="#" class="query__form">
+                <label for="company">Название организации<input type="text" id="company" name="company"></label>
+                <label for="name">Контактное лицо<input type="text" id="name" name="name"></label>
+                <label for="phone">Телефон<input type="text" id="phone" name="phone"></label>
+                <label for="email">Адрес электронной почты<input type="text" id="email" name="email"></label>
+                <label for="textarea">Текст запроса<textarea id="textarea" name="textarea"></textarea></label>
+                <button type="submit" class="query__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="footer__left col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="footer__logo"><a href=""><img src="./assets/images/logo-footer.png" alt=""></a></div>
+                    <div class="footer__tel"><a href="tel:+7-812-677-41-00">+7 812 677 41 00</a></div>
+                    <div class="footer__email"><a href="mailto:mail@anker-pk.ru">mail@anker-pk.ru</a></div>
+                </div>
+                <div class="footer__center col-sm-3 col-md-2 col-lg-1 col-xl-1">
+                    <div class="nav">
+                        <ul class="footer__menu">
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="#catalog">Каталог</a></li>
+                            <li><a href="">Компания</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right col-sm-3 col-md-4 col-lg-5 col-xl-5">
+                    <div class="nav">
+                        <ul class="footer__menu">
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer__mobile-menu">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <!--li><a href="" class="li--center">Компания</a></li>
+                    <li><a href="" class="li--right">Партнёры</a></li>-->
+                    <li><a href="" class="li--center">Каталог</a></li>
+                    <!--<li><a href="" class="li--center">Доставка</a></li>-->
+                    <li><a href="" class="li--right">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
